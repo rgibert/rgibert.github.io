@@ -1,0 +1,43 @@
+---
+name: Richard Gibert
+description: My random stuff
+meta_description: "Richard Gibert's web site"
+
+aboutPage: true
+
+markdown: kramdown
+highlighter: rouge
+
+plugins: [jekyll-paginate]
+paginate: 20
+domain_name: "https://richard.gibert.ca"
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: false
+disqus_shortname: 'your-disqus-shortname'
+
+# Details for the RSS feed generator
+url: 'https://richard.gibert.ca'
+author: 'Richard Gibert'
+authorTwitter: 'richardgibert'
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post

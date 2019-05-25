@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <section id="post-body">
+    <h1 class="section-title">Skills</h1>
+    <div class="item">
+      <ul>
+        {% for category in site.data.resume.skills %}
+          <li>
+            {{ category.category }}: {% for point in category.points %}{% if forloop.first != true %}, {% endif %}{{ point }}{% endfor %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <p/>
+
+    <h1 class="section-title">Experience</h1>
+    {% for role in site.data.resume.roles %}
+    <div class="item">
+      <div class="meta">
+        <div class="upper-row">
+          <h3 class="job-title">{{ role.role }}</h3>
+          <div class="time">{{ role.time }}</div>
+        </div>
+        <div class="company">{{ role.company }}</div>
+      </div>
+      {% if role.details %}
+        <div class="details">
+          <ul>
+            {% for point in role.details %}
+              <li>{{ point }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+    <p/>
+    {% endfor %}
+
+    <p/>
+
+    <h1 class="section-title">Projects of Interest</h1>
+    {% for project in site.data.resume.projects %}
+    <div class="item">
+      <a href="{{ project.link }}">{{ project.title }}</a> - {{ project.tagline }}
+    </div>
+    {% endfor %}
+
+    <p/>
+
+    <h1 class="section-title">Education & Training</h1>
+    {% for education in site.data.resume.education %}
+    <div class="item">
+      <div class="meta">
+        <div class="upper-row">
+          <h3 class="job-title">{{ education.degree }}</h3>
+          <div class="time">{{ education.time }}</div>
+        </div>
+        <div class="company">{{ education.university }}</div>
+      </div>
+    </div>
+    <p/>
+    {% endfor %}
+  </section>
+</article>

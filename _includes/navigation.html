@@ -1,0 +1,18 @@
+<nav class="main-nav">
+    {% if page.url != "/" %}
+        <a href="{{ "/" | relative_url  }}"> <span class="arrow">←</span> Home </a>
+    {% endif %}
+
+    {% if page.url != "/resume/" %}
+        <a href="{{ "/" | relative_url  }}resume">Resume </a>
+    {% endif %}
+
+    {% if page.url != "/fitness/" %}
+        <a href="{{ "/" | relative_url  }}fitness">Fitness </a>
+    {% endif %}
+
+    {% if page.url != "/library/" %}
+        <a href="{{ "/" | relative_url  }}library">Library </a>
+    {% endif %}
+    
+</nav>
