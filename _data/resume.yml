@@ -4,6 +4,8 @@ roles:
       company: Royal Bank of Canada
       details:
         - Providing technical leadership to DNA’s Platform Engineering team
+        - Containerizing operational support tools to allow for easy maintenance and deployment
+        - Developing CI/CD pipelines for conatinerized tools, and Ansible roles and playbooks
 
     - role: Senior Platform Engineer, Data & Analytics (DNA)
       time: January 2016 to June 2018
