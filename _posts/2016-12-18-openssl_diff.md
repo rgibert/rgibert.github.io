@@ -1,6 +1,5 @@
 ---
 title: Using OpenSSL to Validate a Key Pair Match
-description: "Using OpenSSL to validate a key pair match"
 modified: 2016-12-18
 tags: [tls,ssl,openssl]
 layout: post
