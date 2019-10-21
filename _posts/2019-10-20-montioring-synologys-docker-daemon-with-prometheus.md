@@ -8,7 +8,7 @@ layout: post
 Docker can be configured to expose Prometheus formated metrics, to enable this functionality you need to add the
 following to /var/packages/Docker/etc/dockerd.json :
 
-{% highligh json %}
+{% highlight json %}
 {
   "experimental" : true,
   "metrics-addr" : "0.0.0.0:9999",
