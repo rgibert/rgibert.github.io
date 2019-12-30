@@ -85,11 +85,14 @@ projects:
     - title: hadoop-utils scripts
       link: https://github.com/rgibert/hadoop-utils
       tagline: Collection of scripts for managing Hadoop clusters
+    - title: Ansble roles
+      link: https://galaxy.ansible.com/rgibert
+      tagline: Variety of Ansible roles
 
 skills:
     - category: Big Data
       points:
-        - Hadoop
+        - Hadoop (HDP)
     - category: Build / Configuration Management
       points:
         - Ansible
@@ -110,8 +113,6 @@ skills:
         - Java
         - PHP
         - SQL
-        - HTML
-        - CSS
     - category: Source Control
       points:
         - Git
@@ -119,7 +120,6 @@ skills:
     - category: Operating Systems
       points:
         - Linux
-        - Solaris
         - Windows
     - category: Identity Management
       points:
@@ -129,8 +129,8 @@ skills:
         - OpenSSO
     - category: Monitoring / Metrics
       points:
+        - Prometheus
         - Nagios
-        - Sensu
 
 education:
     - degree: Hadoop Platform and Application Framework
@@ -140,14 +140,6 @@ education:
     - degree: Cryptography I
       university: Coursera - Stanford University
       time: March 2014
-
-    - degree: BBQ-style Cooking
-      university: George Brown College
-      time: February 2014
-
-    - degree: Culinary Arts I
-      university: George Brown College
-      time: December 2013
 
     - degree: ITIL v3 Foundations Certification
       university: Loyalist Certification Services
