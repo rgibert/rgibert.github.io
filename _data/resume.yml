@@ -4,14 +4,19 @@ roles:
       company: Royal Bank of Canada
       details:
         - Providing technical leadership to DNA’s Platform Engineering team
+        - Managing day-to-day workload assignments and prioritization of the DNA Platform Engineering team
         - Containerizing operational support tools to allow for easy maintenance and deployment
-        - Developing CI/CD pipelines for conatinerized tools, and Ansible roles and playbooks
+        - Developing CI/CD pipelines for containerized tools
+        - Developing automated testing pipeline for Ansible roles and playbooks using OpenShift containers and Jenkins
+        - Migrating existing Sensu (on VMs) monitoring system to a containerized Prometheus deployment to simplify deployment and support processes
+        - Evaluating Cloudera Data Platform (CDP) Data Centre for future migration plans from HDP
+        - Providing 24/7 level 3 support for the production support team
 
     - role: Senior Platform Engineer, Data & Analytics (DNA)
       time: January 2016 to June 2018
       company: Royal Bank of Canada
       details:
-        - Designed and built RBC’s new Enterprise multi-tenant Hadoop (Hortonworks) clusters (test and production) with roughly 350 data nodes in production
+        - Designed and built RBC’s new Enterprise multi-tenant Hadoop (Hortonworks Data Platform - HDP) clusters (test and production) with roughly 400 data nodes in production
         - Enabled Kerberos security for all Hadoop services
         - Integrated Ambari & Ranger with Microsoft Active Directory
         - Defined standards for creating security policies in Ranger
@@ -22,11 +27,12 @@ roles:
         - Configured Red Hat Linux to integrate with Microsoft Active Directory using SSSD
         - Automated system setup of all services and tools using Ansible roles & playbooks
         - Wrote knowledgebase articles to simplify support and user interactions with our systems
-        - Provided technical leadership for Platform Engineering team
+        - Organized and directed the successful upgrade of the HDP 2.4.2 environment to HDP 2.6.3, supporting 100+ application tenants
+        - Provided technical leadership to DNA's Platform Engineering team
         - Provided 24/7 level 3 support for the production support team
 
-    - role: Implementation Analyst, Delivery and Support Services
-      time: July 2008 to January 2016
+    - role: Implementation Analyst IV, Delivery and Support Services
+      time: July 2012 to January 2016
       company: Symcor
       details:
         - Provide expertise to projects for implementing middleware systems across all development, test, and production systems, working with developers, testers, project managers, and internal and external clients
@@ -43,6 +49,14 @@ roles:
         - Implement and manage client facing single sign-on (SSO) solutions based on SAML 2.0
         - Develop and manage internal monitoring and system management tools
         - Provide 24/7 support for middleware systems including WebSphere MQ, Apache httpd, Apache Tomcat, Apache Geronimo, WebSphere AS and IBM Sterling Connect:Direct
+
+    - role: Implementation Analyst III, Delivery and Support Services
+      time: September 2009 to March 2012
+      company: Symcor
+
+    - role: Implementation Analyst II, Delivery and Support Services
+      time: July 2008 to September 2009
+      company: Symcor
 
     - role: Interactive Media Developer
       time: May 2008 to June 2008
@@ -93,19 +107,6 @@ skills:
     - category: Big Data
       points:
         - Hadoop (HDP)
-    - category: Build / Configuration Management
-      points:
-        - Ansible
-        - Maven
-        - Capistrano/Webistrano
-        - Ant
-    - category: Middleware
-      points:
-        - Apache httpd
-        - Apache Tomcat
-        - Apache Geronimo
-        - IBM WebSphere MQ
-        - IBM WebSphere Application Server
     - category: Languages
       points:
         - Bash
@@ -113,6 +114,20 @@ skills:
         - Java
         - PHP
         - SQL
+    - category: Build / Configuration Management
+      points:
+        - Ansible
+        - Maven
+        - Capistrano/Webistrano
+        - Ant
+        - Jenkins
+    - category: Middleware
+      points:
+        - Apache httpd
+        - Apache Tomcat
+        - Apache Geronimo
+        - IBM WebSphere MQ
+        - IBM WebSphere Application Server
     - category: Source Control
       points:
         - Git
@@ -127,7 +142,8 @@ skills:
         - LDAP
         - Active Directory
         - OpenSSO
-    - category: Monitoring / Metrics
+        - SAML
+    - category: Monitoring & Metrics
       points:
         - Prometheus
         - Nagios

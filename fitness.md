@@ -3,7 +3,7 @@ title: Fitness
 permalink: fitness/
 ---
 
-# Running
+## Running
 
 | Race | Date | Distance | Goal | Finishing Time |
 |------|------|----------|------|----------------|
