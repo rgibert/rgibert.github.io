@@ -1,6 +1,6 @@
 ---
 title: Setting up WireGuard using a Synology NAS as the server
-modified: 2020-04-02
+modified: 2020-04-05
 tags: [wireguard, vpn]
 layout: post
 ---
@@ -46,6 +46,7 @@ AllowedIPs = VPN_NETWORK_IP_FOR_PEER_1/32
 [Peer]
 PublicKey = PEER_2_PUBLIC_KEY
 AllowedIPs = VPN_NETWORK_IP_FOR_PEER_2/32
+EOF
 {% endhighlight %}
 
 # Configure WireGuard Clients
@@ -96,6 +97,7 @@ PrivateKey = LOCAL_HOST_PRIVATE_KEY
 PublicKey = SERVER_PUBLIC_KEY
 AllowedIPs = IPS_TO_TUNNEL
 Endpoint = SERVER:PORT
+EOF
 {% endhighlight %}
   NOTE: If you'd like to route all traffic through the VPN, set AllowedIPs to 0.0.0.0/0
 5. Attach your configuration file to your WireGuard device
