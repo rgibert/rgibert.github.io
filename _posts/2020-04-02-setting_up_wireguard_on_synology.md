@@ -56,14 +56,14 @@ sudo ip link add dev wg0 type wireguard
 1. Click +
 1. Choose "Create from scratch"
 1. Set Interface settings
-  {% highlight %}
+  {% highlight bash %}
   Name: Tunnel name
   Private key: set an existing private key or generate
   Public key: set an existing public key, if you generated the public key it will already be populated
   Addresses: Comma separated list of IPs to tunnel
   {% endhighlight %}
 1. Add Peer
-  {% highlight %}
+  {% highlight bash %}
   Public key: VPN_SERVER_PUBLIC_KEY
   Pre-shared key: VPN_SERVER_PSK (if provided)
   Endpoint: SERVER:PORT
@@ -148,7 +148,7 @@ mkdir -p ~/.local/share/icons
 wget https://richard.gibert.ca/assets/images/wireguard.png -P ~/.local/share/icons
     {% endhighlight %}
   1. Create the desktop file at ~/.local/share/applications
-    {% highlight %}
+    {% highlight bash %}
 [Desktop Entry]
 Type=Application
 Name[en_CA]=WireGuard Toggle
