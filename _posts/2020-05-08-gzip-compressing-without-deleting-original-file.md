@@ -1,7 +1,7 @@
 ---
 title: gzip Compressing Without Removing Original File
 modified: 2020-05-08
-tags: [docker, containers, heroku]
+tags: [gzip, linux]
 layout: post
 ---
 
