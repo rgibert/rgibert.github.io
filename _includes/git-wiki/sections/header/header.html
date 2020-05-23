@@ -22,23 +22,9 @@
       {% endif %}
     </div>
 
-    <p class="view">
-      <a href="https://github.com/rgibert"
-         class="fab fa-lg fa-github"
-         style="color:darkslategray"></a>
-      <a href="https://www.facebook.com/richard.gibert"
-         class="fab fa-lg fa-facebook-f"
-         style="color:darkslategray"></a>
-      <a href="https://www.linkedin.com/in/richard-gibert-32bba36/"
-         class="fab fa-lg fa-linkedin-in"
-         style="color:darkslategray"></a>
-      <a href="https://keybase.io/rgibert/pgp_keys.asc"
-         class="fas fa-lg fa-lock"
-         style="color:darkslategray"></a>
-      <a href="mailto:richard@gibert.ca"
-         class="far fa-lg fa-envelope"
-         style="color:darkslategray"></a>
-    </p>
+    {% if site.inc_after_header %}
+    {% include {{ site.inc_after_header }} %}
+    {% endif %}
 
     {% if site.show_downloads %}
     {% include git-wiki/components/action_btn/downloads.html %}
@@ -50,10 +36,6 @@
 
     {% if site.blog_feature and site.show_wiki_posts %}
     {% include git-wiki/components/lists/post-list.html %}
-    {% endif %}
-
-    {% if site.inc_after_header %}
-    {% include {{ site.inc_after_header }} %}
     {% endif %}
   </div>
 </header>
