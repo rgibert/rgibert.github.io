@@ -1,5 +1,4 @@
 ---
-layout: main
 redirect_from: "/"
 ---
 
