@@ -9,7 +9,7 @@
         {% assign numPages=0 %}
         {% assign items = site.html_pages | sort: 'title' %}
         {% for page in items %}
-        {% if numPages >= site.show_wiki_pages_limit %}
+        {% if site.show_wiki_pages_limit != 0 && numPages >= site.show_wiki_pages_limit %}
         {% break %}
         {% endif %}
         {% if page.is_wiki_page != false and page.sitemap != false %}
