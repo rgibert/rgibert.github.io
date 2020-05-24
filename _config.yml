@@ -66,9 +66,9 @@ kramdown:
 defaults:
  -
     scope:
-      path: .well-known
+      path: ".well-known"
     values:
-      layout: "well-known"
+      layout: "plaintext"
  - 
     scope:
       path: "wiki"
