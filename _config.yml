@@ -91,6 +91,11 @@ defaults:
       path: assets/blog
     values:
       layout: "git-wiki-blog"
+ -
+    scope:
+      path: .well-known
+    values:
+      layout: "well-known"
 sass:
     style: compressed
 plugins:
