@@ -121,26 +121,27 @@ sudo ip route add 128.0.0.0/1 dev wg0
 
 #### Gnome Toggle Setup
 1. Create toggle script and save to /usr/local/bin/wireguard-toggle
-~~~ bash
-#!/usr/bin/env bash
 
-set -euo pipefail
+    #!/usr/bin/env bash    
+        
+    set -euo pipefail    
+        
+    if ip a | grep -q 'wg0'; then    
+      for route in $(ip route | grep wg0 | cut -d" " -f1); do    
+        sudo ip route del ${route}    
+      done    
+      sudo ip link set down dev wg0    
+      sudo ip link del wg0    
+    else    
+      sudo ip link add dev wg0 type wireguard    
+      sudo wg setconf wg0 /etc/wireguard/wg0.conf    
+      sudo ip address add dev wg0 LOCAL_HOST_VPN_IP/24    
+      sudo ip link set up dev wg0    
+      sudo ip route add 0.0.0.0/1 dev wg0    
+      sudo ip route add 128.0.0.0/1 dev wg0    
+    fi    
+    {: .language-bash}
 
-if ip a | grep -q 'wg0'; then
-  for route in $(ip route | grep wg0 | cut -d" " -f1); do
-    sudo ip route del ${route}
-  done
-  sudo ip link set down dev wg0
-  sudo ip link del wg0'
-else
-  sudo ip link add dev wg0 type wireguard
-  sudo wg setconf wg0 /etc/wireguard/wg0.conf
-  sudo ip address add dev wg0 LOCAL_HOST_VPN_IP/24
-  sudo ip link set up dev wg0
-  sudo ip route add 0.0.0.0/1 dev wg0
-  sudo ip route add 128.0.0.0/1 dev wg0
-fi
-~~~
 NOTE: The script assumes you're in sudoers with NOPASSWD set, if not you can use [Zenity](https://help.gnome.org/users/zenity/) to add a password prompt.
 1. Copy the WireGuard icon
 ~~~ bash
