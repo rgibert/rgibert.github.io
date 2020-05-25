@@ -94,10 +94,10 @@ May 2002 to December 2004
 ## Projects of Interest
 
 ### hadoop-utils scripts
-- https://github.com/rgibert/hadoop-utils
+- [https://github.com/rgibert/hadoop-utils](https://github.com/rgibert/hadoop-utils)
 
 ### Ansible roles and collections
-- https://galaxy.ansible.com/rgibert
+- [https://galaxy.ansible.com/rgibert](https://galaxy.ansible.com/rgibert)
 
 ## Education & Training
 
