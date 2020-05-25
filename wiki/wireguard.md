@@ -121,7 +121,6 @@ sudo ip route add 128.0.0.0/1 dev wg0
 
 #### Gnome Toggle Setup
 1. Create toggle script and save to /usr/local/bin/wireguard-toggle
-NOTE: The script assumes you're in sudoers with NOPASSWD set, if not you can use [Zenity](https://help.gnome.org/users/zenity/) to add a password prompt.
 ~~~ bash
 #!/usr/bin/env bash
 
@@ -142,6 +141,7 @@ else
   sudo ip route add 128.0.0.0/1 dev wg0
 fi
 ~~~
+NOTE: The script assumes you're in sudoers with NOPASSWD set, if not you can use [Zenity](https://help.gnome.org/users/zenity/) to add a password prompt.
 1. Copy the WireGuard icon
 ~~~ bash
 mkdir -p ~/.local/share/icons
