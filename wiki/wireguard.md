@@ -131,15 +131,15 @@ if ip a | grep -q 'wg0'; then
   for route in $(ip route | grep wg0 | cut -d" " -f1); do
     sudo ip route del ${route}
   done
-  sudo sh -c 'ip link set down dev wg0; \
-    ip link del wg0'
+  sudo ip link set down dev wg0
+  sudo ip link del wg0'
 else
-  sudo sh -c 'ip link add dev wg0 type wireguard; \
-    wg setconf wg0 /etc/wireguard/wg0.conf; \
-    ip address add dev wg0 LOCAL_HOST_VPN_IP/24; \
-    ip link set up dev wg0; \
-    ip route add 0.0.0.0/1 dev wg0; \
-    ip route add 128.0.0.0/1 dev wg0'
+  sudo ip link add dev wg0 type wireguard
+  sudo wg setconf wg0 /etc/wireguard/wg0.conf
+  sudo ip address add dev wg0 LOCAL_HOST_VPN_IP/24
+  sudo ip link set up dev wg0
+  sudo ip route add 0.0.0.0/1 dev wg0
+  sudo ip route add 128.0.0.0/1 dev wg0
 fi
 ~~~
 1. Copy the WireGuard icon
