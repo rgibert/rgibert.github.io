@@ -66,9 +66,9 @@ Endpoint: SERVER:PORT
 Allowed IPs: VPN_NETWORK_IP_FOR_PEER_1/32
 ~~~
 
-## Configure Linux Clients
+### Configure Linux Clients
 
-### Base WireGuard Setup
+#### Base WireGuard Setup
 
 1. Make sure the WireGuard module is loaded
 ~~~ bash
@@ -87,14 +87,14 @@ sudo ip link add dev wg0 type wireguard
 ~~~
 1. Setup your configuration file at /etc/wireguard/wg0.conf
 ~~~ bash
-[Interface]
-PrivateKey = LOCAL_HOST_PRIVATE_KEY
+    [Interface]    
+    PrivateKey = LOCAL_HOST_PRIVATE_KEY    
+        
+    [Peer]    
+    PublicKey = SERVER_PUBLIC_KEY    
+    AllowedIPs = IPS_TO_TUNNEL    
+    Endpoint = SERVER:PORT    
 
-[Peer]
-PublicKey = SERVER_PUBLIC_KEY
-AllowedIPs = IPS_TO_TUNNEL
-Endpoint = SERVER:PORT
-~~~
   NOTE: If you'd like to route all traffic through the VPN, set AllowedIPs to 0.0.0.0/0
 1. Attach your configuration file to your WireGuard device
 ~~~ bash
@@ -119,7 +119,7 @@ sudo ip route add 0.0.0.0/1 dev wg0
 sudo ip route add 128.0.0.0/1 dev wg0
 ~~~
 
-### Gnome Toggle Setup
+#### Gnome Toggle Setup
 1. Create toggle script and save to /usr/local/bin/wireguard-toggle
   NOTE: The script assumes you're in sudoers with NOPASSWD set, if not you can use [Zenity](https://help.gnome.org/users/zenity/) to add a password prompt.
 ~~~ bash
