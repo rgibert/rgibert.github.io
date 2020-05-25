@@ -6,25 +6,25 @@
 1. Copy the spk to your Synology
 1. Install the spk
 ~~~
-synopkg install PATH_TO_SPK
+sudo synopkg install PATH_TO_SPK
 ~~~
 1. Start the package
 ~~~
-synopkg start WireGuard
+sudo synopkg start WireGuard
 ~~~
 
 ## Configure WireGuard on the Synology
 
 1. Make sure the WireGuard module is loaded
 ~~~
-modprobe WireGuard
+sudo modprobe WireGuard
 ~~~
-1. Generate your public/private keys (as root)
+1. Generate your public/private keys
 ~~~
-umask 077
-mkdir -p /etc/wireguard
-wg genkey | tee /etc/wireguard/privatekey-$(hostname -s)
-wg pubkey > /etc/wireguard/publickey-$(hostname -s)"
+sudo sh -c 'umask 077; \
+mkdir -p /etc/wireguard; \
+wg genkey | tee /etc/wireguard/privatekey-$(hostname -s); \
+wg pubkey > /etc/wireguard/publickey-$(hostname -s)'
 ~~~
 1. Add the WireGuard device
 ~~~
@@ -73,14 +73,14 @@ Allowed IPs: VPN_NETWORK_IP_FOR_PEER_1/32
 
 1. Make sure the WireGuard module is loaded
 ~~~
-modprobe WireGuard
+sudo modprobe WireGuard
 ~~~
-1. Generate your public/private keys (as root)
+1. Generate your public/private keys
 ~~~
-umask 077
-mkdir -p /etc/wireguard
-wg genkey | tee /etc/wireguard/privatekey-$(hostname -s)
-wg pubkey > /etc/wireguard/publickey-$(hostname -s)"
+sudo sh -c 'umask 077; \
+mkdir -p /etc/wireguard; \
+wg genkey | tee /etc/wireguard/privatekey-$(hostname -s); \
+wg pubkey > /etc/wireguard/publickey-$(hostname -s)'
 ~~~
 1. Add the WireGuard device
 ~~~
@@ -99,25 +99,25 @@ Endpoint = SERVER:PORT
   NOTE: If you'd like to route all traffic through the VPN, set AllowedIPs to 0.0.0.0/0
 1. Attach your configuration file to your WireGuard device
 ~~~
-wg setconf wg0 /etc/wireguard/wg0.conf
+sudo wg setconf wg0 /etc/wireguard/wg0.conf
 ~~~
 1. Attach the VPN IP to the WireGuard device
 ~~~
-ip address add dev wg0 LOCAL_HOST_VPN_IP/24
+sudo ip address add dev wg0 LOCAL_HOST_VPN_IP/24
 ~~~
 1. Bring up the tunnel
 ~~~
-ip link set up dev wg0
+sudo ip link set up dev wg0
 ~~~
 1. Setup your routing
   - if you'd like to route just the VPN network you can simply add the following:
 ~~~
-ip route add VPN_INTERNAL_NETWORK/24 dev wg0
+sudo ip route add VPN_INTERNAL_NETWORK/24 dev wg0
 ~~~
   - if you'd like to route all traffic through the VPN, use the following:
 ~~~
-ip route add 0.0.0.0/1 dev wg0
-ip route add 128.0.0.0/1 dev wg0
+sudo ip route add 0.0.0.0/1 dev wg0
+sudo ip route add 128.0.0.0/1 dev wg0
 ~~~
 
 ### Gnome Toggle Setup
@@ -126,19 +126,21 @@ ip route add 128.0.0.0/1 dev wg0
 ~~~
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 if ip a | grep -q 'wg0'; then
   for route in $(ip route | grep wg0 | cut -d" " -f1); do
     sudo ip route del ${route}
   done
-  sudo ip link set down dev wg0
-  sudo ip link del wg0
+  sudo sh -c 'ip link set down dev wg0; \
+    ip link del wg0'
 else
-  sudo ip link add dev wg0 type wireguard
-  sudo wg setconf wg0 /etc/wireguard/wg0.conf
-  sudo ip address add dev wg0 LOCAL_HOST_VPN_IP/24
-  sudo ip link set up dev wg0
-  sudo ip route add 0.0.0.0/1 dev wg0
-  sudo ip route add 128.0.0.0/1 dev wg0
+  sudo sh -c 'ip link add dev wg0 type wireguard; \
+    wg setconf wg0 /etc/wireguard/wg0.conf; \
+    ip address add dev wg0 LOCAL_HOST_VPN_IP/24; \
+    ip link set up dev wg0; \
+    ip route add 0.0.0.0/1 dev wg0; \
+    ip route add 128.0.0.0/1 dev wg0'
 fi
 ~~~
 1. Copy the WireGuard icon
