@@ -32,17 +32,17 @@ sudo ip link add dev wg0 type wireguard
 ~~~
 1. Setup your configuration file at /etc/wireguard/wg0.conf
 
-    [Interface]
-    ListenPort = 51820
-    PrivateKey = VPN_SERVER_PRIVATE_KEY
-    
-    [Peer]
-    PublicKey = PEER_1_PUBLIC_KEY
-    AllowedIPs = VPN_NETWORK_IP_FOR_PEER_1/32
-    
-    [Peer]
-    PublicKey = PEER_2_PUBLIC_KEY
-    AllowedIPs = VPN_NETWORK_IP_FOR_PEER_2/32
+    [Interface]    
+    ListenPort = 51820    
+    PrivateKey = VPN_SERVER_PRIVATE_KEY    
+        
+    [Peer]    
+    PublicKey = PEER_1_PUBLIC_KEY    
+    AllowedIPs = VPN_NETWORK_IP_FOR_PEER_1/32    
+        
+    [Peer]    
+    PublicKey = PEER_2_PUBLIC_KEY    
+    AllowedIPs = VPN_NETWORK_IP_FOR_PEER_2/32    
 
 ## Configure WireGuard Clients
 
