@@ -86,16 +86,16 @@ wg pubkey > /etc/wireguard/publickey-$(hostname -s)'
 sudo ip link add dev wg0 type wireguard
 ~~~
 1. Setup your configuration file at /etc/wireguard/wg0.conf
+~~~
+[Interface]
+PrivateKey = LOCAL_HOST_PRIVATE_KEY
 
-    [Interface]    
-    PrivateKey = LOCAL_HOST_PRIVATE_KEY    
-        
-    [Peer]    
-    PublicKey = SERVER_PUBLIC_KEY    
-    AllowedIPs = IPS_TO_TUNNEL    
-    Endpoint = SERVER:PORT    
-
-  NOTE: If you'd like to route all traffic through the VPN, set AllowedIPs to 0.0.0.0/0
+[Peer]
+PublicKey = SERVER_PUBLIC_KEY
+AllowedIPs = IPS_TO_TUNNEL
+Endpoint = SERVER:PORT
+~~~
+NOTE: If you'd like to route all traffic through the VPN, set AllowedIPs to 0.0.0.0/0
 1. Attach your configuration file to your WireGuard device
 ~~~ bash
 sudo wg setconf wg0 /etc/wireguard/wg0.conf
