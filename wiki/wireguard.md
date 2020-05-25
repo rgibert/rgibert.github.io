@@ -86,7 +86,6 @@ wg pubkey > /etc/wireguard/publickey-$(hostname -s)'
 sudo ip link add dev wg0 type wireguard
 ~~~
 1. Setup your configuration file at /etc/wireguard/wg0.conf
-~~~ bash
     [Interface]    
     PrivateKey = LOCAL_HOST_PRIVATE_KEY    
         
