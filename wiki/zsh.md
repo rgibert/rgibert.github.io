@@ -13,3 +13,11 @@ The following will run git clone for any .git repository pasted into the command
 ~~~
 alias -s git="git clone"
 ~~~
+
+## Global Aliases
+
+Matches all usage in a line, example:
+~~~
+alias -g G="| grep "
+ps ux G foo
+~~~
