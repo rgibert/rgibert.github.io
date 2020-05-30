@@ -1,5 +1,6 @@
 ---
 redirect_from: .well-known/keybase.txt
+title: Keybase Proof
 ---
 ==================================================================
 https://keybase.io/rgibert
