@@ -1,5 +1,9 @@
 # SSL/TLS
 
+## Best Practices
+
+- Try to set certificates to expire during business hours on a work day.
+
 ## List an Endpoints's Supported Ciphers
 
 ~~~
