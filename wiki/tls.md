@@ -13,7 +13,11 @@ nmap --script ssl-enum-ciphers -Pn PORT HOST
 ## Print Certificate Expiry for an Endpoint
 
 ~~~
-openssl s_client -connect HOST:PORT 2>/dev/null <<< "Q" | openssl x509 -text | grep "Not After :"
+openssl \
+    s_client \
+    -connect HOST:PORT 2>/dev/null <<< "Q" \
+    | openssl x509 -text \
+    | grep "Not After :"
 ~~~
 
 ## Generating a Self-Signed Certificate
