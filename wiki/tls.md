@@ -3,11 +3,14 @@
 ## Best Practices
 
 - Try to set certificates to expire during business hours on a work day.
+- Don't use Java JKSes, they're deprecated and insecure, use PKCS#12 instead.
 
 ## List an Endpoints's Supported Ciphers
 
 ~~~
-nmap --script ssl-enum-ciphers -Pn PORT HOST
+nmap \
+    --script ssl-enum-ciphers \
+    -Pn PORT HOST
 ~~~
 
 ## Print Certificate Expiry for an Endpoint
