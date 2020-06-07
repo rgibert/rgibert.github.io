@@ -28,25 +28,25 @@ heroku container:release -a APP_NAME web
 1. Add control / metadata files
     - app.json
     ~~~
-    {
-        "name": "NAME",
-        "description": "DESCRIPTION",
-        "repository": "HTTP_PATH_TO_REPO",
-        "logo": "HTTP_PATH_TO_LOGO",
-        "keywords": [ "KEYWORD1", "KEYWORD2"]
-    }
+{
+    "name": "NAME",
+    "description": "DESCRIPTION",
+    "repository": "HTTP_PATH_TO_REPO",
+    "logo": "HTTP_PATH_TO_LOGO",
+    "keywords": [ "KEYWORD1", "KEYWORD2"]
+}
     ~~~
     - Profile
     ~~~
-    web: gunicorn WSGI_CLASS_TO_LOAD:app
+web: gunicorn WSGI_CLASS_TO_LOAD:app
     ~~~
     - update requirements.txt to add
     ~~~
-    gunicorn
+gunicorn
     ~~~
     - runtime.txt
     ~~~
-    python-3.8.3
+python-3.8.3
     ~~~
 ~~~
 git commit -am 'add Heroku files'
