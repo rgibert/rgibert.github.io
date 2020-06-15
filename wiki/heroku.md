@@ -3,23 +3,23 @@
 ## Deploying Docker Images
 
 1. Log into Heroku
-~~~
+~~~ bash
 heroku login
 ~~~
 1. Create your Heroku application
-~~~
+~~~ bash
 heroku create APP_NAME
 ~~~
 1. Log into the Heroku container registry
-~~~
+~~~ bash
 heroku container:login -a APP_NAME
 ~~~
 1. Build & push the container image
-~~~
+~~~ bash
 heroku container:push -a APP_NAME web
 ~~~
 1. Release the container
-~~~
+~~~ bash
 heroku container:release -a APP_NAME web
 ~~~
 
@@ -27,7 +27,7 @@ heroku container:release -a APP_NAME web
 
 1. Add control / metadata files
     - app.json
-    ~~~
+    ~~~ json
 {
     "name": "NAME",
     "description": "DESCRIPTION",
@@ -48,18 +48,18 @@ gunicorn
     ~~~
 python-3.8.3
     ~~~
-~~~
+~~~ bash
 git commit -am 'add Heroku files'
 ~~~
 1. Log into Heroku
-~~~
+~~~ bash
 heroku login
 ~~~
 1. Create your Heroku application
-~~~
+~~~ bash
 heroku create APP_NAME
 ~~~
 1. Push your branch (if master you can just use 'heroku master') for deployment
-~~~
+~~~ bash
 git push heroku BRANCH:master
 ~~~
