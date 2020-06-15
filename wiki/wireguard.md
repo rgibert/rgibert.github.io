@@ -24,7 +24,7 @@ sudo modprobe WireGuard
 sudo sh -c 'umask 077; \
 mkdir -p /etc/wireguard; \
 wg genkey | tee /etc/wireguard/privatekey-$(hostname -s); \
-wg pubkey > /etc/wireguard/publickey-$(hostname -s)'
+wg pubkey < /etc/wireguard/privatekey-$(hostname -s) > /etc/wireguard/publickey-$(hostname -s)'
 ~~~
 1. Add the WireGuard device
 ~~~ bash
