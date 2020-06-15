@@ -7,7 +7,7 @@
 
 ## List an Endpoints's Supported Ciphers
 
-~~~
+~~~ bash
 nmap \
     --script ssl-enum-ciphers \
     -Pn PORT HOST
@@ -15,7 +15,7 @@ nmap \
 
 ## Print Certificate Expiry for an Endpoint
 
-~~~
+~~~ bash
 openssl \
     s_client \
     -connect HOST:PORT 2>/dev/null <<< "Q" \
@@ -25,7 +25,7 @@ openssl \
 
 ## Generating a Self-Signed Certificate
 
-~~~
+~~~ bash
 openssl \
   req \
     -nodes \
@@ -39,7 +39,7 @@ openssl \
 
 ## Convert PEM to PKCS#12
 
-~~~
+~~~ bash
 openssl \
   pkcs12 \
     -export \
@@ -52,7 +52,7 @@ openssl \
 
 NOTE: JKS is deprecated, you should use PKCS#12 instead.
 
-~~~
+~~~ bash
 keytool \
   -importkeystore \
   -srckeystore input.pkcs12 \
@@ -63,7 +63,7 @@ keytool \
 
 ## Verify Certificate and Key Match
 
-~~~
+~~~ bash
 export FQDN=DOMAIN_TO_VALIDATE
 export C=$(openssl x509 -noout -modulus -in ${FQDN}.cer | openssl md5)
 export K=$(openssl rsa -noout -modulus -in ${FQDN}.key | openssl md5)
