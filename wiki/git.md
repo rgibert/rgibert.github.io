@@ -2,8 +2,8 @@
 
 ## Pushing to Multiple Repositories
 
-~~~
-git clone git@git...:... example
+~~~ bash
+git clone repo1 example
 cd example
-git remote set-url --add origin git@git2...:..
+git remote set-url --add origin repo2
 ~~~
