@@ -2,7 +2,7 @@
 
 ## Key/CSR Generation with Vaulting
 
-~~~
+~~~ bash
 export F=FQDN
 export TLS_BITS=4096
 export C=Canada
