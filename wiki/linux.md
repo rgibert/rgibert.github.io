@@ -1,7 +1,7 @@
 # Linux
 
 ## Compress a File Without Removing It
-~~~
+~~~ bash
 gzip < file > file.gz
 ~~~
 
@@ -18,7 +18,7 @@ USER hard nofile NEW_LIMIT
 1. Restart your system for the changes to take effect.
 
 ## Loop Over Unique Pairings of Items
-~~~
+~~~ bash
 set -- item0 item1 item2
 for outer; do
     shift
@@ -30,14 +30,14 @@ done
 
 ## Recursively Set +x for Only Directories
 Set the executable bit for directories (and not files) using +X (upper case) instead of +x (lower case).
-~~~
+~~~ bash
 chmod g+rX *
 ~~~
 
 ## Prevent sudo Password Prompts
 
 If you don't have NOPASSWD set in sudoers, you can still bypass the password prompt by setting SUDO_ASKPASS to a binary that echos your password.
-~~~
+~~~ bash
 echo "echo mypassword" > ~/.local/bin/sudopass.sh
 chmod 755 ~/.local/bin/sudopass.sh
 export SUDO_ASKPASS=${HOME}/.local/bin/sudopass.sh
