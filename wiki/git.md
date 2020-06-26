@@ -1,5 +1,11 @@
 # Git
 
+## Global Ignore File
+
+~~~ bash
+git config --global core.excludesfile ~/.config/git/gitignore
+~~~
+
 ## Pushing to Multiple Repositories
 
 ~~~ bash
