@@ -73,3 +73,9 @@ else
     echo "Key pair DO NOT match"
 fi
 ~~~
+
+## Print all certificates in a bundle
+
+~~~ bash
+keytool -printcert -v -file bundle.pem | grep Owner
+~~~
