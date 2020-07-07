@@ -23,6 +23,18 @@ openssl \
     | grep "Not After :"
 ~~~
 
+## Generating a Key and CSR
+
+~~~ bash
+openssl \
+    -out fqdn.csr \
+    -new \
+    -newkey rsa:4096 \
+    -nodes \
+    -keyout fqdn.key \
+    -subj "/C=COUNTRY/ST=STATE/L=CITY/O=COMPANY/OU=ORG/CN=FQDN"
+~~~
+
 ## Generating a Self-Signed Certificate
 
 ~~~ bash
