@@ -2,7 +2,7 @@
 redirect_from: "/"
 ---
 
-# Home
+# About
 
 Welcome to Richard Gibert's personal web site and knowledge base.
 
