@@ -34,3 +34,9 @@ virsh snapshot-create-as --domain vm-name --name "snapshot-name"
 ~~~ bash
 virsh snapshot-revert --domain vm-name --snapshotname "snapshot-name"
 ~~~
+
+### Delete VM Snapshot
+
+~~~ bash
+virsh snapshot-delete --domain vm-name --snapshotname "snapshot-name"
+~~~
