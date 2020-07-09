@@ -1,6 +1,8 @@
 # Virtualization
 
-## Convert VirtualBox Appliance to KVM Appliance
+## KVM
+
+### Convert VirtualBox Appliance to KVM Appliance
 
 ~~~ bash
 # Unpack OVA
@@ -9,20 +11,26 @@ tar -xf vm-appliance.ova
 qemu-img convert -f vdi -O qcow2 vm-disk-name.vdi vm-disk-name.qcow2
 ~~~
 
-## List Running KVM VMs
+### List Running VMs
 
 ~~~ bash
 virsh list
 ~~~
 
-## List KVM VM Snapshots
+### List VM Snapshots
 
 ~~~ bash
 virsh snapshot-list --domain vm-name
 ~~~
 
-## Create KVM VM Snapshot
+### Create VM Snapshot
 
 ~~~ bash
 virsh snapshot-create-as --domain vm-name --name "snapshot-name"
+~~~
+
+### Restore VM Snapshot
+
+~~~ bash
+virsh snapshot-revert --domain vm-name --snapshotname "snapshot-name"
 ~~~
