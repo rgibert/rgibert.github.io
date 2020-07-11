@@ -55,4 +55,5 @@ export SUDO_ASKPASS=${HOME}/.local/bin/sudopass.sh
 
 ~~~ bash
 semanage fcontext -a -t container_file_t '<path_root>(/.*)?'
+restorecon -R <path_root>
 ~~~
