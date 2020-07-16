@@ -8,6 +8,12 @@ See [https://moreati.org.uk/blog/2020/07/05/ansible-is-stringly-typed.html](http
 when: (skip_install is not defined) or (not skip_install | bool)
 ~~~
 
+## Print all hosts in a group
+
+~~~ bash
+ansible localhost -i <inventory> -m debug -a "var=groups['<group_name>']"
+~~~
+
 ## Key/CSR Generation with Vaulting
 
 ~~~ bash
