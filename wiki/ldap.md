@@ -3,6 +3,7 @@
 ## Generating Passwords for Principals
 
 ~~~ python
+#!/usr/bin/env python
 import base64
 base64.b64encode(u'"PASSWORD"'.encode('UTF-16LE'))
 ~~~
