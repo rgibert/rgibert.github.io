@@ -1,7 +1,7 @@
 # (string) Title of your wiki
 title: "Richard Gibert"
 # (string) Description of your wiki
-description: "devops, big data, hadoop, containers, kubernetes"
+description: "devops, big data, hadoop, containers"
 # (boolean) Enable/disable wiki page list in sidebar
 show_wiki_pages: true
 # (integer) Maximum number of wiki page to shown in sidebar
@@ -115,7 +115,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-titles-from-headings
   - jemoji
-
 
 #
 # INCLUDING HOOKS
