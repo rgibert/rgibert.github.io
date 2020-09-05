@@ -6,7 +6,7 @@ title: VPN
 
 ## Install the WireGuard Synology package
 
-1. Download the correct release of runfalk's Synology WireGuard package from https://github.com/runfalk/synology-wireguard/releases for your device
+1. Download the correct release of runfalk's Synology WireGuard package from [https://github.com/runfalk/synology-wireguard/releases](https://github.com/runfalk/synology-wireguard/releases) for your device
 1. Copy the spk to your Synology
 1. Install the spk
 ~~~ bash
