@@ -1,149 +1,92 @@
-# (string) Title of your wiki
-title: "Richard Gibert"
-# (string) Description of your wiki
-description: "devops, big data, hadoop, containers"
-# (boolean) Enable/disable wiki page list in sidebar
-show_wiki_pages: true
-# (integer) Maximum number of wiki page to shown in sidebar
-show_wiki_pages_limit: 0
-# (boolean) Enable/disable blog feature
-blog_feature: true
-# (boolean) Enable/disable wiki posts list in sidebar (needs blog_feature enabled)
-show_wiki_posts: true
-# (integer) Maximum number of wiki posts to shown in sidebar
-show_wiki_posts_limit: 10
-# from jekyll (read jekyll doc)
-paginate: 5
-paginate_path: "assets/blog/page:num"
-permalink: /blog/posts/:year/:month/:day/:title:output_ext
-# (boolean) Enable/disable download buttons in sidebar
-show_downloads: false
-# (string) Specify branch rendered by gitpages allowing wiki tool buttons to work
-git_branch: "master"
-# (string) Url of logo image, it can be full, absolute or relative.
-logo_url: assets/images/avatar.png
-# (string) The UA-XXXXX-Y code from google analytic to enable GA on your wiki
-google_analytics: 
-# (string) folder where wiki pages are stored, it's needed for tool buttons
-wiki_folder: "wiki"
-# (boolean) if you're using github wiki as submodule then this config
-# must be enabled to allow tool buttons to work properly
-use_github_wiki: false
-# (boolean) Enable "Edit with Prose.io" button in tools, it's a 3rd party
-# service to edit github markdown pages easily
-use_prose_io: false
-# Select search_engine component from:
-# - js: it uses a built in javascript component that uses generated js object
-# - js_rss: it uses a built in javascript component that uses generated  sitemap_full.xml to search inside your wiki with lunr library (slow and experimental)
-# - github : it uses internal github repository search
-# - google : it uses cse search bar, you need to configure google_cse_token
+# Welcome to Jekyll!
 #
-search_engine : "js"
-# Setting google custom search engine for google
-# cse search bar (https://cse.google.it/cse/)
-google_cse_token: 
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# (string) path of site root. Normally it's must be empty because _config.yml resides in the root of your repository.
-# If you have _config.yml and your site in a subfolder, then change this config accordly 
-site_root: 
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-#
-# Jekyll configurations
-#
+title: Richard Gibert
+email: richard@gibert.ca
+author: Richard Gibert
+description: > # this means to ignore newlines until "baseurl:"
+  Richard Gibert's web site nad knowledge base
+# DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
+baseurl: "" # the subpath of your site, e.g. /blog
 
-# You can customize it changing default layout for all pages
-# More info: https://jekyllrb.com/docs/configuration/
-#
-# git-wiki includes some internal themes that you can choose
-# check _layouts folder
-#
+# This is mostly for testing
+url: "https://richard.gibert.ca" # the base hostname & protocol for your site
+
+# Social (First three Required)
+repo: "https://github.com/rgibert/rgibert.github.io"
+github_user: "rgibert"
+github_repo: "rgibert.github.io"
+
+# Optional
+twitter: richard_gibert
+linkedin: richard-gibert-32bba36
+dockerhub: rgibert
+
+# Should there be feedback buttons at the bottom of pages?
+feedback: false
+
+# Link to a privacy policy in footer, uncomment and define if wanted
+# privacy: https://domain.com/privacy
+
+# google-analytics: UA-XXXXXXXXXX
+# Image and (square) dimension for logo (don't start with /)
+# If commented, will use material hat theme
+# logo: "assets/img/logo/SRCC-square-red.png"
+logo_pixels: 34
+color: "#30638e"
+# color: "#8c1515" # primary color for header, buttons
+
+# Build settings
 markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 
+# If you add tags to pages, define this variable to link them to some external search
+# If you want to link to tags locally on the site, leave this commented out
+# tag_search_endpoint: https://ask.cyberinfrastructure.org/search?q=
+tag_color: primary # danger, success, warning, primary, info, secondary
+
+accentColor: red # purple, green, etc.
+themeColor: red # purple, green, blue, orange, purple, grey
+fixedNav: 'true' # true or false
+
+permalink: /:year/:title/
+markdown: kramdown
+exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path
+
+# Defaults
 defaults:
- -
-    scope:
-      path: ".well-known"
+  - scope:
+      path: "_docs"
+      type: "docs"
     values:
-      layout: "plaintext"
- - 
-    scope:
-      path: "wiki"
-    values:
-      permalink: /:basename
- -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "git-wiki-default"
- -
+      layout: page
+  -
     scope:
       path: ""
       type: "pages"
     values:
-      layout: "git-wiki-default"
- -
+      layout: "page"
+  -
     scope:
-      path: ""
+      path: "posts"
       type: "posts"
     values:
-      layout: "git-wiki-post"
- -
-    scope:
-      path: assets/blog
-    values:
-      layout: "git-wiki-blog"
-sass:
-    style: compressed
-plugins:
-  - jekyll-avatar
-  - jekyll-coffeescript
-  - jekyll-default-layout
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-mentions
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-  - jekyll-redirect-from
-  - jekyll-remote-theme
-  - jekyll-relative-links
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-titles-from-headings
-  - jemoji
-
-#
-# INCLUDING HOOKS
-# They are optional, change them only if you need
-# Check wiki documentation to learn how they work
-#
-
-inc_before_toc : 
-inc_after_toc : 
-inc_before_content : 
-inc_after_content : 
-inc_before_footer : 
-inc_after_footer : 
-inc_before_head : 
-inc_after_head : 
-inc_before_meta : 
-inc_after_meta : 
-inc_before_scripts : 
-inc_after_scripts : 
-inc_before_styles : 
-inc_after_styles : 
-inc_before_header : 
-inc_after_header : "links.html"
-inc_before_tail : 
-inc_after_tail : 
-inc_before_tools : 
-inc_after_tools : 
-
-inc_before_page_list :
-inc_after_page_list :
-inc_before_post_list :
-inc_after_post_list :
+      layout: "post"

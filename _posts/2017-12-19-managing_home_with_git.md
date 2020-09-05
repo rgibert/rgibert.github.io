@@ -1,9 +1,7 @@
 ---
 title: Managing your $HOME with git without symlinks
-tags: [git, linux]
+categories: git, linux
 ---
-
-# Managing your $HOME with git without symlinks
 
 ## Overview
 

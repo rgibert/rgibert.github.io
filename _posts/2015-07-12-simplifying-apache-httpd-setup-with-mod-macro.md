@@ -1,9 +1,7 @@
 ---
-title: "Simplifying Apache httpd setup with mod_macro"
-tags: [httpd, code]
+title: Simplifying Apache httpd setup with mod_macro
+categories: httpd code
 ---
-
-# Simplifying Apache httpd setup with mod_macro
 
 For Apache httpd setups with numerous virtual hosts there can be a lot of config redundancy. This can be alleviated by using mod_macro (as of httpd 2.4.6 this is a default Apache httpd module, for older versions it can be downloaded from https://people.apache.org/~fabien/mod_macro/).
 

@@ -1,0 +1,75 @@
+- title: Documentation
+  url: docs
+  links:
+    - title: Books
+      url: docs/books
+    - title: Browsers
+      url: docs/browsers
+      children:
+        - title: Firefox
+          url: docs/browsers#firefox
+    - title: Cloud
+      url: docs/cloud
+      children:
+        - title: Heroku
+          url: docs/cloud#heroku
+    - title: Code
+      url: docs/code
+      children:
+        - title: Ansible
+          url: docs/code#ansible
+        - title: Git
+          url: docs/code#git
+        - title: HTML
+          url: docs/code#html
+    - title: Fitness
+      url: docs/fitness
+      children:
+        - title: Running
+          url: docs/fitness#running
+    - title: Identity
+      url: docs/identity
+      children:
+        - title: LDAP
+          url: docs/identity#ldap
+    - title: Leadership
+      url: docs/leadership
+    - title: OS
+      url: docs/os
+      children:
+        - title: Linux
+          url: docs/os#linux
+        - title: macOS
+          url: docs/os#macos
+    - title: Shell
+      url: docs/shell
+      children:
+        - title: Bash
+          url: docs/shell#bash
+        - title: Zsh
+          url: docs/shell#zsh
+    - title: SSL/TLS
+      url: docs/ssltls
+      children:
+        - title: Utilities
+          url: docs/ssltls#utilities
+        - title: PEM
+          url: docs/ssltls#pem
+        - title: PKCS#12
+          url: docs/ssltls#pkcs%2312
+        - title: JKS
+          url: docs/ssltls#jks
+    - title: Synology
+      url: docs/synology
+    - title: Virtualization
+      url: docs/virtualization
+      children:
+        - title: Vagrant
+          url: docs/virtualization#vagrant
+        - title: Virtual Machines
+          url: "docs/virtualization#virtual machines"
+    - title: VPN
+      url: docs/vpn
+      children:
+        - title: WireGuard
+          url: docs/vpn#wireguard

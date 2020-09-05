@@ -1,9 +1,7 @@
 ---
-title: "Using Tomcat’s CATALINA_BASE & CATALINA_HOME for multiple instances"
-tags: [tomcat, code, java]
+title: Using Tomcat’s CATALINA_BASE & CATALINA_HOME for multiple instances
+categories: tomcat code java
 ---
-
-# Using Tomcat’s CATALINA_BASE & CATALINA_HOME for multiple instances
 
 Tomcat supports having multiple instances from a single installation by using the CATALINA_BASE & CATALINA_HOME directories. CATALINA_BASE is the installation root, while CATALINA_HOME is the instance root. Using these two variables and a few symbolic links it’s easy to support quick & easy changes between patch levels (and even major revisions) of Tomcat without having to re-install & re-configure application/deployment level changes.
 
