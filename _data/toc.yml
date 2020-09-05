@@ -56,7 +56,7 @@
         - title: PEM
           url: docs/ssltls#pem
         - title: PKCS#12
-          url: docs/ssltls#pkcs%2312
+          url: docs/ssltls#pkcs12
         - title: JKS
           url: docs/ssltls#jks
     - title: Synology
