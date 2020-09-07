@@ -78,3 +78,22 @@ See [Linux - Prevent sudo Password Prompts](os#prevent-sudo-password-prompts)
 ## Disabling auto-hide scroll bars
 
 System Preferences -> General -> Show scroll bars = Always
+
+## Disable Touchpad Swipe Back
+
+~~~
+# Chrome
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
+# FireFox
+defaults write org.mozilla.firefox AppleEnableSwipeNavigateWithScrolls -bool FALSE
+# Brave
+defaults write com.brave.Browser AppleEnableSwipeNavigateWithScrolls -bool FALSE
+# Safari
+defaults write com.apple.Safari AppleEnableSwipeNavigateWithScrolls -bool FALSE
+~~~
+
+## Disable Dock Bouncing Icons
+
+~~~
+defaults write com.apple.dock no-bouncing -bool TRUE; killall Dock
+~~~
