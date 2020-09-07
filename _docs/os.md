@@ -66,9 +66,14 @@ defaults write com.apple.Dock position-immutable -bool yes; killall Dock
 defaults write com.apple.Dock size-immutable -bool yes; killall Dock
 ~~~
 
+## Show CMD-TAB App Switcher On All Monitors
+~~~
+defaults write com.apple.Dock appswitcher-all-displays -bool true; killall Dock
+~~~
+
 ## Prevent sudo Password Prompts
 
-See [Linux - Prevent sudo Password Prompts](https://richard.gibert.ca/linux#prevent-sudo-password-prompts)
+See [Linux - Prevent sudo Password Prompts](docs/os#prevent-sudo-password-prompts)
 
 ## Disabling auto-hide scroll bars
 
