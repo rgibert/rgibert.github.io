@@ -73,7 +73,7 @@ defaults write com.apple.Dock appswitcher-all-displays -bool true; killall Dock
 
 ## Prevent sudo Password Prompts
 
-See [Linux - Prevent sudo Password Prompts](docs/os#prevent-sudo-password-prompts)
+See [Linux - Prevent sudo Password Prompts](os#prevent-sudo-password-prompts)
 
 ## Disabling auto-hide scroll bars
 
