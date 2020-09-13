@@ -13,6 +13,15 @@ title: Synology
 ~~~
 1. Restart the Docker package
 
+## Set Custom DNS Servers
+1. Edit /var/packages/Docker/etc/dockerd.json:
+~~~ json
+{
+  "dns": ["SERVER_0", "SERVER_1"]
+}
+~~~
+1. Restart the Docker package
+
 ## Setup Unprivileged Docker Access
 
 1. Add your user to the docker group:
