@@ -102,3 +102,15 @@ keytool \
   -destkeystore output.jks \
   -deststoretype JKS
 ~~~
+
+## Copy Existing Alias to a New Alias
+
+~~~ bash
+keytool \
+    -keyclone \
+    -keystore keystore.jks \
+    -alias 'existing_alias' \
+    -dest 'new_alias' \
+    -keypass 'existing_key_password' \
+    -newkeypass 'new_key_password'
+~~~
