@@ -6,7 +6,7 @@ title: OS
 
 ## FFMPEG
 
-### Speed up audio of in a file
+### Speed up audio of a file
 
 NOTE: ACCELERATION can be a value from "0.5" (1/2 speed) to "2.0" (double speed)
 
