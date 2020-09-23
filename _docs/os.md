@@ -4,6 +4,16 @@ title: OS
 
 # Linux
 
+## FFMPEG
+
+### Speed up audio of in a file
+
+NOTE: ACCELERATION can be a value from "0.5" (1/2 speed) to "2.0" (double speed)
+
+~~~ bash
+ffmpeg -i INPUT_FILE -filter:a "atempo=ACCELERATION" -vn OUTPUT_FILE
+~~~
+
 ## GZip
 
 ### Compress a File Without Removing It
