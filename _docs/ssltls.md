@@ -74,6 +74,19 @@ fi
 keytool -printcert -v -file bundle.pem | grep Owner
 ~~~
 
+## Dump endpoint certificate to a PEM file
+
+~~~ bash
+openssl \
+    s_client \
+    -showcerts \
+    -connect HOST:PORT \
+    </dev/null \
+    2>/dev/null \
+    | openssl x509 \
+        -outform PEM
+~~~
+
 
 # PKCS#12
 
@@ -103,7 +116,7 @@ keytool \
   -deststoretype JKS
 ~~~
 
-## Copy Existing Alias to a New Alias
+## Copy existing alias to a new alias
 
 ~~~ bash
 keytool \
