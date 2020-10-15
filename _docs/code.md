@@ -82,3 +82,11 @@ From [https://news.ycombinator.com/item?id=24111105](https://news.ycombinator.co
 ~~~ html
 <link rel="icon" href="data:image/gif;base64,R0lGODlhEAAQAAAAACwAAAAAAQABAAACASgAOw==">
 ~~~
+
+# Prometheus
+
+## Query Core/Thread Counts
+
+~~~ promql
+count without(cpu, mode) (node_cpu_seconds_total{mode="idle"})
+~~~
