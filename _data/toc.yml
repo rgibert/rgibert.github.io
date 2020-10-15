@@ -41,6 +41,8 @@
           url: docs/os#linux
         - title: macOS
           url: docs/os#macos
+    - title: Quotes
+      url: docs/quotes
     - title: Shell
       url: docs/shell
       children:
