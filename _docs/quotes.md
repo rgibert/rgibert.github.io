@@ -9,7 +9,7 @@ title: Quotes
 - Unknown
 
 "It doesn't get easier. You just go faster."
--Greg Lemond
+- Greg Lemond
 
 "Don’t stop when you’re tired, stop when you’re done!" 
 - David Goggins
