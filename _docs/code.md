@@ -73,6 +73,14 @@ git remote set-url --add origin repo2
 git commit -m "line 1" -m "line 2"
 ~~~
 
+## Limit Clone to Just Master Branch For Performance
+
+When cloning large repositories with many branches, you can isolate the branch you'd like to clone (good for builds) but setting the fetch refspec as follows:
+
+~~~ bash
+git clone -c remote.origin.fetch=+refs/heads/master:refs/remotes/origin/master repo
+~~~
+
 # HTML
 
 ## Small/Basic Favicons
