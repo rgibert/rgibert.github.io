@@ -40,13 +40,18 @@ chown root:docker /var/run/docker.sock
 
 1. Install the Loki driver plugin
 ~~~ bash
-docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions
+docker plugin \
+  install \
+  grafana/loki-docker-driver:latest \
+  --alias loki \
+  --grant-all-permissions
 ~~~
 1. Change logger per container
 ~~~ bash
-docker run --log-driver=loki \
-    --log-opt loki-url="LOKI_URL/loki/api/v1/push" \
-    IMAGE
+docker run \
+  --log-driver=loki \
+  --log-opt loki-url="LOKI_URL/loki/api/v1/push" \
+  IMAGE
 ~~~
 
 ## Updating Docker Loki Driver
