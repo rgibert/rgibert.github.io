@@ -22,6 +22,8 @@
           url: docs/code#git
         - title: HTML
           url: docs/code#html
+        - title: Prometheus
+          url: docs/code#prometheus
     - title: Fitness
       url: docs/fitness
       children:
