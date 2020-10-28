@@ -12,6 +12,9 @@ title: Synology
 }
 ~~~
 1. Restart the Docker package
+~~~ bash
+synoservice --restart pkgctl-Docker
+~~~
 
 ## Set Custom DNS Servers
 1. Edit /var/packages/Docker/etc/dockerd.json:
@@ -31,4 +34,19 @@ synogroup --add docker <your_username>
 1. Fix permissions on the Docker socket:
 ~~~ bash
 chown root:docker /var/run/docker.sock
+~~~
+
+## Ship Docker Logs to Loki
+
+1. Install the Loki driver plugin
+~~~ bash
+docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions
+~~~
+
+## Updating Docker Loki Driver
+~~~ bash
+docker plugin disable loki --force
+docker plugin upgrade loki grafana/loki-docker-driver:latest --grant-all-permissions
+docker plugin enable loki
+synoservice --restart pkgctl-Docker
 ~~~
