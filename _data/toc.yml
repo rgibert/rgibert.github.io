@@ -24,6 +24,8 @@
           url: docs/code#html
         - title: Prometheus
           url: docs/code#prometheus
+        - title: Shell
+          url: docs/code#shell
     - title: Fitness
       url: docs/fitness
       children:
@@ -45,13 +47,6 @@
           url: docs/os#macos
     - title: Quotes
       url: docs/quotes
-    - title: Shell
-      url: docs/shell
-      children:
-        - title: Bash
-          url: docs/shell#bash
-        - title: Zsh
-          url: docs/shell#zsh
     - title: SSL/TLS
       url: docs/ssltls
       children:
