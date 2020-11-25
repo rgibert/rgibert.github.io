@@ -15,7 +15,10 @@ title: Quotes
 - David Goggins
 
 “Pain is inevitable. Suffering is optional.”
-- Unknown
+- Haruki Murakami
 
 "There's no such thing as bad weather, only bad clothes."
 - Unknown
+
+"I love deadlines.  I love the whooshing noise they make as they go by."
+- Douglas Adams
