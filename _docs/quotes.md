@@ -22,3 +22,6 @@ title: Quotes
 
 "I love deadlines.  I love the whooshing noise they make as they go by."
 - Douglas Adams
+
+"In Theory, Theory and Practice are the same. In Practice they're not."
+- Charlie Munger
