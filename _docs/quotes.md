@@ -29,3 +29,6 @@ title: Quotes
 "Some people, when confronted with a problem, think
 'I know, I'll use regular expressions.'   Now they have two problems."
 - Jamie Zawinski
+
+"There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors."
+- Jeff Atwood
