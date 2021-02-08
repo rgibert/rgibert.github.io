@@ -28,6 +28,11 @@
           url: docs/code#prometheus
         - title: Shell
           url: docs/code#shell
+    - title: Fitness
+      url: docs/fitness
+      children:
+        - title: Running
+          url: docs/fitness#running
     - title: Hardware
       url: docs/hardware
       children:
@@ -35,11 +40,6 @@
           url: docs/hardware#pi-hole
         - title: Environment Monitoring
           url: docs/hardware#environmentmonitoring
-    - title: Fitness
-      url: docs/fitness
-      children:
-        - title: Running
-          url: docs/fitness#running
     - title: Identity
       url: docs/identity
       children:
