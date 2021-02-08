@@ -1,3 +1,5 @@
+- title: Blog
+  url: blog
 - title: Documentation
   url: docs
   links:
@@ -26,6 +28,13 @@
           url: docs/code#prometheus
         - title: Shell
           url: docs/code#shell
+    - title: Hardware
+      url: docs/hardware
+      children:
+        - title: Pi-hole
+          url: docs/hardware#pi-hole
+        - title: Environment Monitoring
+          url: docs/hardware#environmentmonitoring
     - title: Fitness
       url: docs/fitness
       children:
