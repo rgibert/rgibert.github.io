@@ -2,37 +2,47 @@
 title: Resume
 ---
 
+## Skills
+
+| Development | Ansible, Bash, Python, Java, SQL |
+| Source control | Git, Subversion |
+| CI/CD | Jenkins, Travis CI, Maven, Ant |
+| Identity & access management | Kerberos, LDAP, SAML |
+| Metrics, monitoring and alerting | Prometheus, Nagios |
+| Other | Apache httpd, Apache Tomcat, Apache Geronimo |
+
 ## Experience
 
 ### Lead Platform Engineer, Data & Analytics (DNA)
 Royal Bank of Canada   
 June 2018 to Present
- - Providing technical leadership to DNA’s Platform Engineering team
- - Managing day-to-day workload assignments and prioritization of the DNA Platform Engineering team
- - Containerizing operational support tools to allow for easy maintenance and deployment
- - Developing CI/CD pipelines for containerized tools
- - Developing automated testing pipeline for Ansible roles and playbooks using OpenShift containers and Jenkins
- - Migrating existing Sensu (on VMs) monitoring system to a containerized Prometheus deployment to simplify deployment and support processes
- - Evaluating Cloudera Data Platform (CDP) Data Centre for future migration plans from HDP
- - Providing 24/7 level 3 support for the production support team
+ - Providing technical leadership to DNA’s Platform Engineering team.
+ - Managing day-to-day workload assignments and prioritization of the DNA Platform Engineering team.
+ - Leading RBC's Cloudera Data Platform (CDP) platform design and build to support migrating applications from the existing HDP platform.
+   - Defined new worker types to more optimally target capacity needs while continuing to meet application performance requirements.
+   - Positioning the new platform to provide additional capabilities to better meet RBC's needs.
+ - Containerizing operational support tools to allow for easy maintenance and deployment.
+ - Developing CI/CD pipelines for containerized tools.
+ - Developing CI/CD pipelines for Ansible role and playbook development, leveraging Ansible Molecule as a testing framework.
+ - Led migration of Sensu monitoring system to a containerized Prometheus deployment to simplify deployment and support processes, allowing more effective metrics collection and alerting.
+ - Providing 24/7 level 3 support for the production support team.
 
 ### Senior Platform Engineer, Data & Analytics (DNA)
 Royal Bank of Canada   
 January 2016 to June 2018
- - Designed and built RBC’s new Enterprise multi-tenant Hadoop (Hortonworks Data Platform - HDP) clusters (test and production) with roughly 400 data nodes in production
- - Enabled Kerberos security for all Hadoop services
- - Integrated Ambari & Ranger with Microsoft Active Directory
- - Defined standards for creating security policies in Ranger
- - Enabled high availability (HA) for all supporting Hadoop components including HDFS, YARN, HiveServer2, Hive Metastore, Storm, Kafka and Knox
- - Scripted HDFS directory, Hive database, Kafka topic and Ranger policy creation for more simplified on-boarding of users
- - Setup YARN Resource Manager queues to ensure proper tenant separation and ensure SLAs are met
- - Deployed clusters using Ambari blueprints
- - Configured Red Hat Linux to integrate with Microsoft Active Directory using SSSD
- - Automated system setup of all services and tools using Ansible roles & playbooks
+ - Designed and built RBC’s new enterprise multi-tenant Hadoop (Hortonworks Data Platform - HDP) clusters with roughly 400 worker nodes in production.
+ - Enabled Kerberos security for all Hadoop services.
+ - Integrated Ambari & Ranger with Microsoft Active Directory.
+ - Defined standards for creating security policies in Ranger.
+ - Enabled high availability (HA) for all supporting Hadoop components including HDFS, YARN, HiveServer2, Hive Metastore, Storm, Kafka and Knox.
+ - Scripted HDFS directory, Hive database, Kafka topic and Ranger policy creation for more simplified on-boarding of users.
+ - Deployed Hadoop clusters using Ambari blueprints.
+ - Configured Red Hat Linux to integrate with Microsoft Active Directory using SSSD.
+ - Automated system setup of all services and tools using Ansible roles & playbooks.
  - Wrote knowledgebase articles to simplify support and user interactions with our systems
- - Organized and directed the successful upgrade of the HDP 2.4.2 environment to HDP 2.6.3, supporting 100+ application tenants
- - Provided technical leadership to DNA's Platform Engineering team
- - Provided 24/7 level 3 support for the production support team
+ - Organized and directed the successful upgrade of the HDP 2.4.2 environment to HDP 2.6.3, supporting 100+ application tenants.
+ - Provided technical leadership to DNA's Platform Engineering team.
+ - Provided 24/7 level 3 support for the production support team.
 
 ### Implementation Analyst IV, Delivery and Support Services
 Symcor   
