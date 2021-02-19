@@ -8,7 +8,7 @@ title: Resume
 | Source control | Git, Subversion |
 | CI/CD | Jenkins, Travis CI, Maven, Ant |
 | Identity & access management | Kerberos, LDAP, SAML |
-| Metrics, monitoring and alerting | Prometheus, Nagios |
+| Metrics, monitoring and alerting | Prometheus, Grafana, Nagios |
 | Other | Apache httpd, Apache Tomcat, Apache Geronimo |
 
 ## Experience
