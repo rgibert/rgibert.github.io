@@ -9,6 +9,8 @@ title: Resume
 | CI/CD | Jenkins, Travis CI, Maven, Ant |
 | Identity & access management | Kerberos, LDAP, SAML |
 | Metrics, monitoring and alerting | Prometheus, Grafana, Nagios |
+| OS | Linux, Solaris |
+| Processes | SAFe, Kanban, Scrum, ITIL |
 | Other | Apache httpd, Apache Tomcat, Apache Geronimo |
 
 ## Experience
@@ -16,31 +18,38 @@ title: Resume
 ### Lead Platform Engineer, Data & Analytics (DNA)
 Royal Bank of Canada   
 June 2018 to Present
- - Providing technical leadership to DNA’s Platform Engineering team.
+ - Providing technical leadership to DNA’s Platform Engineering Big Data team.
  - Managing day-to-day workload assignments and prioritization of the DNA Platform Engineering team.
- - Leading RBC's Cloudera Data Platform (CDP) platform design and build to support migrating applications from the existing HDP platform.
-   - Defined new worker types to more optimally target capacity needs while continuing to meet application performance requirements.
-   - Positioning the new platform to provide additional capabilities to better meet RBC's needs.
+ - Leading RBC's EDL 2.0 platform design and build leveraging Cloudera Data Platform (CDP) Private Cloud Base.
+   - Defined new worker types to more optimally target capacity needs while continuing to meet application performance requirements and to provide more flexibility for future cluster expansion.
+   - Working with the Enterprise Data Architecture team to create all architecture and design artifacts.
+   - Working with RBC's enterprise security teams to ensure alignment with enterprise standards.
+   - Positioning the new platform to provide additional capabilities to better meet RBC's future needs.
+   - Leading the build of an evaluation environment for application teams to identify migration pain points, and to complete migration planning.
  - Containerizing operational support tools to allow for easy maintenance and deployment.
  - Developing CI/CD pipelines for containerized tools.
- - Developing CI/CD pipelines for Ansible role and playbook development, leveraging Ansible Molecule as a testing framework.
- - Led migration of Sensu monitoring system to a containerized Prometheus deployment to simplify deployment and support processes, allowing more effective metrics collection and alerting.
+ - Developing plans for CI/CD pipelines for Ansible role and playbook development, leveraging Ansible Molecule as a testing framework.
+ - Defining procedures and standards for team workflows to allow more consistent delivery of enhancements and new functionality.
+ - Researching and evaluating additional tooling and platforms to provide additional options for addressing RBC's data processing and storage needs.
  - Providing 24/7 level 3 support for the production support team.
+ - Led migration of Sensu monitoring system to a containerized Prometheus deployment to simplify deployment and support processes, allowing more effective metrics collection and alerting.
 
 ### Senior Platform Engineer, Data & Analytics (DNA)
 Royal Bank of Canada   
 January 2016 to June 2018
  - Designed and built RBC’s new enterprise multi-tenant Hadoop (Hortonworks Data Platform - HDP) clusters with roughly 400 worker nodes in production.
- - Enabled Kerberos security for all Hadoop services.
- - Integrated Ambari & Ranger with Microsoft Active Directory.
- - Defined standards for creating security policies in Ranger.
- - Enabled high availability (HA) for all supporting Hadoop components including HDFS, YARN, HiveServer2, Hive Metastore, Storm, Kafka and Knox.
- - Scripted HDFS directory, Hive database, Kafka topic and Ranger policy creation for more simplified on-boarding of users.
- - Deployed Hadoop clusters using Ambari blueprints.
- - Configured Red Hat Linux to integrate with Microsoft Active Directory using SSSD.
- - Automated system setup of all services and tools using Ansible roles & playbooks.
+   - Enabled Kerberos security for all Hadoop services.
+   - Integrated interfaces with Microsoft Active Directory leveraging both Kerberos and LDAP.
+   - Defined standards for creating security policies in Ranger.
+   - Scripted Hadoop on-boarding to simplify the on-boarding of users and applications.
+   - Configured Red Hat Linux to integrate with Microsoft Active Directory using SSSD.
+   - Automated system setup of all services and tools using Ansible roles & playbooks.
  - Wrote knowledgebase articles to simplify support and user interactions with our systems
  - Organized and directed the successful upgrade of the HDP 2.4.2 environment to HDP 2.6.3, supporting 100+ application tenants.
+   - Identified breaking changes required to complete the upgrade.
+   - Worked with application teams to identify impact of platform changes and plan for their required code changes.
+   - Built a new upgrade evluation cluster for application upgrade testing so as not to impact business as usual development efforts during the upgrade testing.
+   - Developed upgrade life cycle for the platform so that teams would have a more consistent upgrade cadence.
  - Provided technical leadership to DNA's Platform Engineering team.
  - Provided 24/7 level 3 support for the production support team.
 
