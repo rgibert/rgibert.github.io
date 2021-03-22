@@ -45,8 +45,6 @@
       children:
         - title: LDAP
           url: docs/identity#ldap
-    - title: Leadership
-      url: docs/leadership
     - title: OS
       url: docs/os
       children:
@@ -54,8 +52,6 @@
           url: docs/os#linux
         - title: macOS
           url: docs/os#macos
-    - title: Quotes
-      url: docs/quotes
     - title: SSL/TLS
       url: docs/ssltls
       children:
