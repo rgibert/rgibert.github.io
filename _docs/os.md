@@ -119,11 +119,31 @@ e=$(/opt/MegaRAID/MegaCli/MegaCli64 pdlist -a0 | grep Enc | grep -v 252 | awk â€
 /opt/MegaRAID/storcli/storcli64 /c0 show events filter=critical
 ~~~
 
-# Change Cache Config
+## Change Cache Config
 
 ~~~
 /opt/MegaRAID/MegaCli/MegaCli64 -LDSetProp WB -L${virtual_drive_num} -a0
 /opt/MegaRAID/MegaCli/MegaCli64 -LDSetProp RA -L${virtual_drive_num} -a0
+~~~
+
+# GPG
+
+## Generate New Key
+
+~~~
+gpg --full-generate-key
+~~~
+
+## List Keys
+
+~~~
+gpg --list-secret-keys --keyid-format LONG
+~~~
+
+## Export Key
+
+~~~
+gpg --armor --export KEY_ID
 ~~~
 
 # macOS
