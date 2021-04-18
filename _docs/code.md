@@ -81,6 +81,14 @@ When cloning large repositories with many branches, you can isolate the branch y
 git clone -c remote.origin.fetch=+refs/heads/master:refs/remotes/origin/master repo
 ~~~
 
+## Setup GPG Signing
+
+~~~ bash
+git config --global gpg.program gpg
+git config --global commit.gpgsign true
+git config --global user.signingkey KEY_ID
+~~~
+
 # HTML
 
 ## Small/Basic Favicons
