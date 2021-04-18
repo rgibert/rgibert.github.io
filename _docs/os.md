@@ -61,6 +61,70 @@ semanage fcontext -a -t container_file_t '<path_root>(/.*)?'
 restorecon -R <path_root>
 ~~~
 
+## MegaRAID
+
+## Get Enclosure ID
+
+~~~
+e=$(/opt/MegaRAID/MegaCli/MegaCli64 pdlist -a0 | grep Enc | grep -v 252 | awk ‘{print $4}' | sort | uniq  -c | awk ‘{print $2}')
+~~~
+
+## Create RAID-1
+~~~
+/opt/MegaRAID/MegaCli/MegaCli64 \
+    -CfgLdAdd \
+    -r1 \
+    [${e}:SLOT0,${e}:SLOT1] \
+    wb ra nocachedbadbbu strpsz1024 -a
+~~~
+
+## Create RAID-10
+
+~~~
+/opt/MegaRAID/MegaCli/MegaCli64 \
+    -CfgSpanAdd \
+    -r10 \
+    -Array0[${e}:SLOT0,${e}:SLOT1] \
+    -Array1[${e}:SLOT2,${e}:SLOT3] \
+    wb ra nocachedbadbbu strpsz1024 -a
+~~~
+
+## Add Dynamic Hot Spare to Disk Group(s)
+
+~~~
+/opt/MegaRAID/storcli/storcli64 /c0/e${e}/s${slot} add hotsparedrive dgs=DG0[,DG1]
+~~~
+
+## Delete JBODs
+
+~~~
+/opt/MegaRAID/storcli/storcli64 /c0/e${e}/s${slot} set good force
+~~~
+
+## Delete Virtual Drive
+
+~~~
+/opt/MegaRAID/storcli/storcli64 /c0/v${virtual_drive_num} delete
+~~~
+
+## Delete Hot Spare
+
+~~~
+/opt/MegaRAID/storcli/storcli64 /c0/e${e}/s${slot} delete hotsparedrive
+~~~
+
+## Show Critical Events
+
+~~~
+/opt/MegaRAID/storcli/storcli64 /c0 show events filter=critical
+~~~
+
+# Change Cache Config
+
+~~~
+/opt/MegaRAID/MegaCli/MegaCli64 -LDSetProp WB -L${virtual_drive_num} -a0
+/opt/MegaRAID/MegaCli/MegaCli64 -LDSetProp RA -L${virtual_drive_num} -a0
+~~~
 
 # macOS
 
