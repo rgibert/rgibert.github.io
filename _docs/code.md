@@ -107,6 +107,15 @@ From [https://news.ycombinator.com/item?id=24111105](https://news.ycombinator.co
 count without(cpu, mode) (node_cpu_seconds_total{mode="idle"})
 ~~~
 
+# Splunk
+
+## Reverse Order Of Events
+
+Append the following to the ends:
+~~~
+| reverse
+~~~
+
 # Shell
 
 ## Bash
