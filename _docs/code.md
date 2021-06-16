@@ -111,7 +111,7 @@ count without(cpu, mode) (node_cpu_seconds_total{mode="idle"})
 
 ## Reverse Order Of Events
 
-Append the following to the ends:
+Append the following to the end of your query.
 ~~~
 | reverse
 ~~~
