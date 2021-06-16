@@ -11,7 +11,7 @@ title: Resume
 | Metrics, monitoring and alerting | Prometheus, Grafana, Nagios |
 | OS | Linux, Solaris |
 | Processes | SAFe, Kanban, Scrum, ITIL |
-| Other | Apache httpd, Apache Tomcat, Apache Geronimo |
+| Other | Hortonworks Data Platform, Cloudera Data Platform, Apache httpd, Apache Tomcat, Apache Geronimo |
 
 ## Experience
 
