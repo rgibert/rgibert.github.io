@@ -28,6 +28,8 @@
           url: docs/code#prometheus
         - title: Shell
           url: docs/code#shell
+        - title: Splunk
+          url: docs/code#splunk
     - title: Fitness
       url: docs/fitness
       children:
