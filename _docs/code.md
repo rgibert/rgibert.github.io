@@ -107,15 +107,6 @@ From [https://news.ycombinator.com/item?id=24111105](https://news.ycombinator.co
 count without(cpu, mode) (node_cpu_seconds_total{mode="idle"})
 ~~~
 
-# Splunk
-
-## Reverse Order Of Events
-
-Append the following to the end of your query.
-~~~
-| reverse
-~~~
-
 # Shell
 
 ## Bash
@@ -163,4 +154,13 @@ Matches all usage in a line, example:
 ~~~ bash
 alias -g G="| grep "
 ps ux G foo
+~~~
+
+# Splunk
+
+## Reverse Order Of Events
+
+Append the following to the end of your query.
+~~~
+| reverse
 ~~~
