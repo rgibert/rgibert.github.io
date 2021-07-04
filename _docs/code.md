@@ -2,6 +2,22 @@
 title: Code
 ---
 
+# Android
+
+## Wireless ADB
+
+- Install [Android Platform Tools](https://developer.android.com/studio/releases/platform-tools).
+- Enable Developer tools on the Android device.
+- Enable "Wireless Debugging" on the Android device.
+- Pair ADB
+~~~ bash
+adb pair host:port
+~~~
+- Connect ADB
+~~~ bash
+adb connect host:port
+~~~
+
 # Ansible
 
 ## Always cast non-string variables
