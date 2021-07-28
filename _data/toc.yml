@@ -10,6 +10,8 @@
       children:
         - title: Firefox
           url: docs/browsers#firefox
+    - title: Career
+      url: docs/career
     - title: Cloud
       url: docs/cloud
       children:
@@ -18,6 +20,8 @@
     - title: Code
       url: docs/code
       children:
+        - title: Android
+          url: docs/code#android
         - title: Ansible
           url: docs/code#ansible
         - title: Git
