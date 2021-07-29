@@ -7,79 +7,25 @@
       url: docs/books
     - title: Browsers
       url: docs/browsers
-      children:
-        - title: Firefox
-          url: docs/browsers#firefox
     - title: Career
       url: docs/career
     - title: Cloud
       url: docs/cloud
-      children:
-        - title: Heroku
-          url: docs/cloud#heroku
     - title: Code
       url: docs/code
-      children:
-        - title: Android
-          url: docs/code#android
-        - title: Ansible
-          url: docs/code#ansible
-        - title: Git
-          url: docs/code#git
-        - title: HTML
-          url: docs/code#html
-        - title: Prometheus
-          url: docs/code#prometheus
-        - title: Shell
-          url: docs/code#shell
-        - title: Splunk
-          url: docs/code#splunk
     - title: Fitness
       url: docs/fitness
-      children:
-        - title: Running
-          url: docs/fitness#running
     - title: Hardware
       url: docs/hardware
-      children:
-        - title: Pi-hole
-          url: docs/hardware#pi-hole
-        - title: Environment Monitoring
-          url: docs/hardware#environmentmonitoring
     - title: Identity
       url: docs/identity
-      children:
-        - title: LDAP
-          url: docs/identity#ldap
     - title: OS
       url: docs/os
-      children:
-        - title: Linux
-          url: docs/os#linux
-        - title: macOS
-          url: docs/os#macos
     - title: SSL/TLS
       url: docs/ssltls
-      children:
-        - title: Utilities
-          url: docs/ssltls#utilities
-        - title: PEM
-          url: docs/ssltls#pem
-        - title: PKCS#12
-          url: docs/ssltls#pkcs12
-        - title: JKS
-          url: docs/ssltls#jks
     - title: Synology
       url: docs/synology
     - title: Virtualization
       url: docs/virtualization
-      children:
-        - title: Vagrant
-          url: docs/virtualization#vagrant
-        - title: Virtual Machines
-          url: "docs/virtualization#virtual machines"
     - title: VPN
       url: docs/vpn
-      children:
-        - title: WireGuard
-          url: docs/vpn#wireguard
