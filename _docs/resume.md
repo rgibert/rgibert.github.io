@@ -22,13 +22,13 @@ June 2018 to Present
  - Managing day-to-day workload assignments and prioritization of the DNA Platform Engineering team.
  - Leading RBC's EDL 2.0 platform design and build leveraging Cloudera Data Platform (CDP) Private Cloud Base.
    - Defined new worker types to more optimally target capacity needs while continuing to meet application performance requirements and to provide more flexibility for future cluster expansion.
-   - Working with the Enterprise Data Architecture team to create all architecture and design artifacts.
-   - Working with RBC's enterprise security teams to ensure alignment with enterprise standards.
+   - Worked with the Enterprise Data Architecture team to create all architecture and design artifacts.
+   - Worked with RBC's enterprise security teams to ensure alignment with enterprise standards.
    - Positioning the new platform to provide additional capabilities to better meet RBC's future needs.
-   - Leading the build of an evaluation environment for application teams to identify migration pain points, and to complete migration planning.
+   - Led the build of an evaluation environment for application teams to identify migration pain points, and to complete migration planning.
  - Containerizing operational support tools to allow for easy maintenance and deployment.
  - Developing CI/CD pipelines for containerized tools.
- - Developing plans for CI/CD pipelines for Ansible role and playbook development, leveraging Ansible Molecule as a testing framework.
+ - Developing CI/CD pipelines for Ansible role and playbook development, leveraging Ansible Molecule as a testing framework.
  - Defining procedures and standards for team workflows to allow more consistent delivery of enhancements and new functionality.
  - Researching and evaluating additional tooling and platforms to provide additional options for addressing RBC's data processing and storage needs.
  - Providing 24/7 level 3 support for the production support team.
