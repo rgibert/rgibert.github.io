@@ -11,7 +11,7 @@ title: Career
 
 * [Lyft](https://eng.lyft.com/)
 * [Netflix](https://netflixtechblog.com/)
-* [Shipify](https://engineering.shopify.com/)
+* [Shopify](https://engineering.shopify.com/)
 * [Slack](https://slack.engineering/)
 * [Uber](https://eng.uber.com/)
 
