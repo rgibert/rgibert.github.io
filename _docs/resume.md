@@ -16,14 +16,14 @@ June 2018 to Present
  - Leading RBC's EDL 2.0 platform design and build leveraging Cloudera Data Platform (CDP) Private Cloud Base.
    - Defined new worker types to more optimally target capacity needs while continuing to meet application performance requirements and to provide more flexibility for future cluster expansion.
    - Worked with the Enterprise Data Architecture team to create all architecture and design artifacts.
-   - Worked with RBC's enterprise security teams to ensure alignment with enterprise standards.
+   - Worked with RBC's enterprise security teams to ensure alignment with enterprise standards and requirements.
    - Positioning the new platform to provide additional capabilities to better meet RBC's future needs.
    - Led the build of an evaluation environment for application teams to identify migration pain points, and to complete migration planning.
  - Containerizing operational support tools to allow for easy maintenance and deployment.
  - Developing CI/CD pipelines for containerized tools.
  - Developing CI/CD pipelines for Ansible role and playbook development, leveraging Ansible Molecule as a testing framework.
- - Defining procedures and standards for team workflows to allow more consistent delivery of enhancements and new functionality.
- - Researching and evaluating additional tooling and platforms to provide additional options for addressing RBC's data processing and storage needs.
+ - Defining procedures and standards for team workflows to allow more consistent delivery.
+ - Researching and evaluating tooling and platforms to provide additional options for addressing RBC's data processing and storage needs.
  - Providing 24/7 level 3 support for the production support team.
  - Led migration of Sensu monitoring system to a containerized Prometheus deployment to simplify deployment and support processes, allowing more effective metrics collection and alerting.
  - Led evaluation of Microsoft Azure cloud for Hadoop disaster recovery purposes.
@@ -32,7 +32,7 @@ June 2018 to Present
 Royal Bank of Canada   
 January 2016 to June 2018
  - Designed and built RBC’s new enterprise multi-tenant Hadoop (Hortonworks Data Platform - HDP) clusters with roughly 400 worker nodes in production.
-   - Enabled Kerberos security for all Hadoop services.
+ - Develop and manage internal monitoring and system management tools.
    - Integrated interfaces with Microsoft Active Directory leveraging both Kerberos and LDAP.
    - Defined standards for creating security policies in Ranger.
    - Scripted Hadoop on-boarding to simplify the on-boarding of users and applications.
