@@ -4,14 +4,7 @@ title: Resume
 
 ## Skills
 
-| Development | Ansible, Bash, Python, Java, SQL |
-| Source control | Git, Subversion |
-| CI/CD | Jenkins, Travis CI, Maven, Ant |
-| Identity & access management | Kerberos, LDAP, SAML |
-| Metrics, monitoring and alerting | Prometheus, Grafana, Nagios |
-| OS | Linux, Solaris |
-| Processes | SAFe, Kanban, Scrum, ITIL |
-| Other | Hortonworks Data Platform, Cloudera Data Platform, Apache httpd, Apache Tomcat, Apache Geronimo |
+Ansible, Bash, Python, Kerberos, LDAP, Prometheus, Grafana, Nagios, Linux, Java, SQL, Git, Subversion (SVN), Jenkins, Travis CI, Maven, Hadoop, Hortonworks Data Platform, Cloudera Data Platform, Apache httpd, Apache Tomcat, Apache Geronimo, SAML, SAFe, Kanban, Scrum, ITIL
 
 ## Experience
 
@@ -19,7 +12,7 @@ title: Resume
 Royal Bank of Canada   
 June 2018 to Present
  - Providing technical leadership to DNA’s Platform Engineering Big Data team.
- - Managing day-to-day workload assignments and prioritization of the DNA Platform Engineering team.
+ - Managing day-to-day workload assignments and prioritization of the DNA Platform Engineering Big Data team.
  - Leading RBC's EDL 2.0 platform design and build leveraging Cloudera Data Platform (CDP) Private Cloud Base.
    - Defined new worker types to more optimally target capacity needs while continuing to meet application performance requirements and to provide more flexibility for future cluster expansion.
    - Worked with the Enterprise Data Architecture team to create all architecture and design artifacts.
@@ -33,6 +26,7 @@ June 2018 to Present
  - Researching and evaluating additional tooling and platforms to provide additional options for addressing RBC's data processing and storage needs.
  - Providing 24/7 level 3 support for the production support team.
  - Led migration of Sensu monitoring system to a containerized Prometheus deployment to simplify deployment and support processes, allowing more effective metrics collection and alerting.
+ - Led evaluation of Microsoft Azure cloud for Hadoop disaster recovery purposes.
 
 ### Senior Platform Engineer, Data & Analytics (DNA)
 Royal Bank of Canada   
@@ -50,26 +44,26 @@ January 2016 to June 2018
    - Worked with application teams to identify impact of platform changes and plan for their required code changes.
    - Built a new upgrade evluation cluster for application upgrade testing so as not to impact business as usual development efforts during the upgrade testing.
    - Developed upgrade life cycle for the platform so that teams would have a more consistent upgrade cadence.
- - Provided technical leadership to DNA's Platform Engineering team.
+ - Provided technical leadership to DNA's Platform Engineering Big Data team.
  - Provided 24/7 level 3 support for the production support team.
 
 ### Implementation Analyst IV, Delivery and Support Services
 Symcor   
 July 2012 to January 2016
- - Provide expertise to projects for implementing middleware systems across all development, test, and production systems, working with developers, testers, project managers, and internal and external clients
- - Sought after by project managers for ability to solve hard problems and explain technical details in plain language
- - Extensive experience managing middleware systems/application servers, including writing command line scripts and manipulating configuration files
- - Build solutions that are simple to set up and maintain, to ensure consistent deployment and configuration
- - Effective at navigating change processes, coordinating multiple stakeholders to ensure rapid progression from initiation through to completion and avoiding unnecessary delays
- - Automate and manage build and deployment processes, allowing greatly reduced deployment time requirements and consistent deployment procedures
- - Investigate and remediate security issues, addressing newly-discovered vulnerabilities via configuration changes or upgrades
- - Lead creation of best practice processes and procedures to ensure system implementations are consistent, reliable, and scalable
- - Standardise Apache httpd configuration across the company to simplify configuration management, ensure proper security levels, and allow for easier problem investigation
- - Standardise Apache Tomcat setup of our applications to allow for easy updates and consistent configuration
- - Spin up proof of concept setups to evaluate new products, ensuring they integrate effectively with existing systems and meet business requirements
- - Implement and manage client facing single sign-on (SSO) solutions based on SAML 2.0
- - Develop and manage internal monitoring and system management tools
- - Provide 24/7 support for middleware systems including WebSphere MQ, Apache httpd, Apache Tomcat, Apache Geronimo, WebSphere AS and IBM Sterling Connect:Direct
+ - Provided expertise to projects for implementing middleware systems across all development, test, and production systems, working with developers, testers, project managers, and internal and external clients.
+ - Sought after by project managers for ability to solve hard problems and explain technical details in plain language.
+ - Extensive experience managing middleware systems/application servers, including writing bash scripts and managing configuration files.
+ - Built solutions that are simple to set up and maintain, to ensure consistent deployment and configuration.
+ - Effective at navigating change processes, coordinating multiple stakeholders to ensure rapid progression from initiation through to completion and avoiding unnecessary delays.
+ - Automated and managed build and deployment processes, allowing greatly reduced deployment time requirements and consistent deployment procedures.
+ - Investigated and remediated security issues, addressing newly-discovered vulnerabilities via configuration changes or upgrades.
+ - Led creation of best practice processes and procedures to ensure system implementations are consistent, reliable, and scalable.
+ - Standardised Apache httpd configuration across the company to simplify configuration management, ensure proper security levels, and allow for easier problem investigation.
+ - Standardised Apache Tomcat setup of our applications to allow for easy updates and consistent configuration.
+ - Spun up proof of concept setups to evaluate new products, ensuring they integrate effectively with existing systems and meet business requirements.
+ - Implemented and managed client facing single sign-on (SSO) integrations leveraging SAML 2.0.
+ - Develop and manage internal monitoring and system management tools.
+ - Provide 24/7 support for middleware systems including WebSphere MQ, Apache httpd, Apache Tomcat, Apache Geronimo, WebSphere AS and IBM Sterling Connect:Direct.
 
 ### Implementation Analyst III, Delivery and Support Services
 Symcor   
