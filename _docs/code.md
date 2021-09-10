@@ -67,6 +67,14 @@ ansible-vault \
     "host_vars/${F}/vault_tls_private_key"
 ~~~
 
+# Docker
+
+## Get CPU allocation
+
+~~~ bash
+cat /sys/fs/cgroup/cpuacct/cpu.cfs_quota_us
+~~~
+
 # Git
 
 ## Global Ignore File
