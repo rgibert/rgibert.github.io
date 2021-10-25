@@ -99,7 +99,7 @@ May 2005 to February 2006
 
 ### Information Systems Technician
 Diageo Canada Inc.   
-May 2002 to December 2004
+May 2003 to December 2004
   - Provided second level technical support to 500 employees; including 1 national office, 7 regional offices, and 4 production plants
   - Used Remedy’s Action Request System to track and maintain support tickets for all incidents
   - Investigated and fixed lost or incorrect customer order data caused by errors in interfaces between various sites & ERP systems
