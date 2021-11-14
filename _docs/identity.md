@@ -6,6 +6,8 @@ title: Identity
 
 ## Common Error Codes
 
+| Code | Description |
+|------|-------------|
 | 525 | User not found |
 | 52e | Invalid credentials |
 | 531 | Not permitted to logon at this workstation |
