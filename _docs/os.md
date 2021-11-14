@@ -148,6 +148,13 @@ gpg --armor --export KEY_ID
 
 # macOS
 
+## Apps
+
+- Homebrew
+- https://muzzleapp.com/
+- https://neat.run/
+- Rectangle
+
 ## Locking macOS Dock Content
 
 ~~~
