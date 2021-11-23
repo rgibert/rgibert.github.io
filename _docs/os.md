@@ -150,10 +150,13 @@ gpg --armor --export KEY_ID
 
 ## Apps
 
-- Homebrew
-- https://muzzleapp.com/
-- https://neat.run/
-- Rectangle
+- [Hidden Bar](https://github.com/dwarvesf/hidden)
+- [Homebrew](https://brew.sh/)
+- [Meeter](https://trymeeter.com/)
+- [Muzzle](https://muzzleapp.com/)
+- [Neat](https://neat.run/)
+- [Rectangle](https://github.com/rxhanson/Rectangle)
+- [Scroll Reverser](https://github.com/pilotmoon/Scroll-Reverser)
 
 ## Locking macOS Dock Content
 
