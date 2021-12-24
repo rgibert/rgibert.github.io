@@ -201,3 +201,14 @@ defaults write com.apple.Safari AppleEnableSwipeNavigateWithScrolls -bool FALSE
 ~~~
 defaults write com.apple.dock no-bouncing -bool TRUE; killall Dock
 ~~~
+
+## Add Trusted Certificate Authority
+
+~~~
+security add-trusted-cert -d -r trustRoot -k ~/Library/Keychains/login.keychain-db <CA_CERTIFICATE>
+~~~
+
+## Set Where Homebrew Installs Applications
+
+~~~
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"

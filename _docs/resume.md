@@ -4,32 +4,36 @@ title: Resume
 
 ## Skills
 
-Ansible, Bash, Python, Kerberos, LDAP, Prometheus, Grafana, Nagios, Linux, Java, SQL, Git, Subversion (SVN), Jenkins, Travis CI, Maven, Hadoop, Hortonworks Data Platform, Cloudera Data Platform, Apache httpd, Apache Tomcat, Apache Geronimo, SAML, SAFe, Kanban, Scrum, ITIL
+Ansible, Bash, Python, Kerberos, LDAP, Prometheus, Grafana, Nagios, Linux, Java, SQL, Git, Subversion (SVN), Jenkins, GitHub Actions, Maven, Hadoop, Hortonworks Data Platform (HDP), Cloudera Data Platform (CDP), Apache httpd, Apache Tomcat, Apache Geronimo, SAML, SAFe, Kanban, Scrum, ITIL
 
 ## Experience
 
+### Senior Site Reliability Engineer
+[Sentry](https://www.sentry.io/)   
+January 2022 to Present
+
 ### Lead Platform Engineer, Data & Analytics (DNA)
-Royal Bank of Canada   
-June 2018 to Present
- - Providing technical leadership to DNA’s Platform Engineering Big Data team.
- - Managing day-to-day workload assignments and prioritization of the DNA Platform Engineering Big Data team.
- - Leading RBC's EDL 2.0 platform design and build leveraging Cloudera Data Platform (CDP) Private Cloud Base.
+[Royal Bank of Canada](https://www.rbcroyalbank.com/)   
+June 2018 to December 2021
+ - Provided technical leadership to DNA’s Platform Engineering Big Data team.
+ - Managed day-to-day workload assignments and prioritization of the DNA Platform Engineering Big Data team.
+ - Led RBC's EDL 2.0 platform design and build leveraging Cloudera Data Platform (CDP) Private Cloud Base.
    - Defined new worker types to more optimally target capacity needs while continuing to meet application performance requirements and to provide more flexibility for future cluster expansion.
    - Worked with the Enterprise Data Architecture team to create all architecture and design artifacts.
    - Worked with RBC's enterprise security teams to ensure alignment with enterprise standards and requirements.
-   - Positioning the new platform to provide additional capabilities to better meet RBC's future needs.
+   - Positioned the new platform to provide additional capabilities to better meet RBC's future needs.
    - Led the build of an evaluation environment for application teams to identify migration pain points, and to complete migration planning.
  - Containerizing operational support tools to allow for easy maintenance and deployment.
- - Developing CI/CD pipelines for containerized tools.
- - Developing CI/CD pipelines for Ansible role and playbook development, leveraging Ansible Molecule as a testing framework.
- - Defining procedures and standards for team workflows to allow more consistent delivery.
- - Researching and evaluating tooling and platforms to provide additional options for addressing RBC's data processing and storage needs.
+ - Developed CI/CD pipelines for containerized tools.
+ - Developed CI/CD pipelines for Ansible role and playbook development, leveraging Ansible Molecule as a testing framework.
+ - Defined procedures and standards for team workflows to allow more consistent delivery.
+ - Researched and evaluated tooling and platforms to provide additional options for addressing RBC's data processing and storage needs.
  - Providing 24/7 level 3 support for the production support team.
  - Led migration of Sensu monitoring system to a containerized Prometheus deployment to simplify deployment and support processes, allowing more effective metrics collection and alerting.
  - Led evaluation of Microsoft Azure cloud for Hadoop disaster recovery purposes.
 
 ### Senior Platform Engineer, Data & Analytics (DNA)
-Royal Bank of Canada   
+[Royal Bank of Canada](https://www.rbcroyalbank.com/)   
 January 2016 to June 2018
  - Designed and built RBC’s new enterprise multi-tenant Hadoop (Hortonworks Data Platform - HDP) clusters with roughly 400 worker nodes in production.
  - Develop and manage internal monitoring and system management tools.
@@ -48,7 +52,7 @@ January 2016 to June 2018
  - Provided 24/7 level 3 support for the production support team.
 
 ### Implementation Analyst IV, Delivery and Support Services
-Symcor   
+[Symcor](https://www.symcor.com/)   
 July 2012 to January 2016
  - Provided expertise to projects for implementing middleware systems across all development, test, and production systems, working with developers, testers, project managers, and internal and external clients.
  - Sought after by project managers for ability to solve hard problems and explain technical details in plain language.
@@ -66,11 +70,11 @@ July 2012 to January 2016
  - Provide 24/7 support for middleware systems including WebSphere MQ, Apache httpd, Apache Tomcat, Apache Geronimo, WebSphere AS and IBM Sterling Connect:Direct.
 
 ### Implementation Analyst III, Delivery and Support Services
-Symcor   
+[Symcor](https://www.symcor.com/)   
 September 2009 to March 2012
 
 ### Implementation Analyst II, Delivery and Support Services
-Symcor   
+[Symcor](https://www.symcor.com/)   
 July 2008 to September 2009
 
 ### Interactive Media Developer
@@ -79,7 +83,7 @@ May 2008 to June 2008
   - Developed Mississauga community web sites using ASP.Net, PHP, JavaScript and MySQL.
 
 ### Automation Specialist
-Metroland Media Group   
+[Metroland Media Group](https://metroland.com/)   
 March 2006 to April 2008
   - Developed and maintained workflows and scripts for the MKS Integrity based C-198 compliance ticket system
   - Developed applications and scripts to simplify maintenance of Active Directory user accounts, desktop systems, and server systems
@@ -91,14 +95,14 @@ March 2006 to April 2008
   - Used BMC Service Desk Express to track and maintain support tickets for all incidents
 
 ### Active Directory Roll Out Technician
-Metroland Media Group   
+[Metroland Media Group](https://metroland.com/)   
 May 2005 to February 2006
   - Migrated Windows 2000 workstations and user profiles from an existing Windows NT 4.0 domain to a new Windows 2003 Active Directory domain for over 1,000 users
   - Updated existing KiXtart login scripts to simplify maintenance
   - Created VBS tools to aid in Active Directory user account management
 
 ### Information Systems Technician
-Diageo Canada Inc.   
+[Diageo Canada](https://www.diageo.com/)   
 May 2003 to December 2004
   - Provided second level technical support to 500 employees; including 1 national office, 7 regional offices, and 4 production plants
   - Used Remedy’s Action Request System to track and maintain support tickets for all incidents
