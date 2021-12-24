@@ -8,10 +8,6 @@ Ansible, Bash, Python, Kerberos, LDAP, Prometheus, Grafana, Nagios, Linux, Java,
 
 ## Experience
 
-### Senior Site Reliability Engineer
-[Sentry](https://www.sentry.io/)   
-January 2022 to Present
-
 ### Lead Platform Engineer, Data & Analytics (DNA)
 [Royal Bank of Canada](https://www.rbcroyalbank.com/)   
 June 2018 to December 2021
