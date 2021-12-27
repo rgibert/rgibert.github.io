@@ -2,6 +2,16 @@
 title: Career
 ---
 
+<style type="text/css" media="screen">
+    .gr_grid_book_container {
+        float: left;
+        width: 39px;
+        height: 60px;
+        padding: 0px 0px;
+        overflow: hidden;
+    }
+</style>
+
 # Leadership Blogs
 
 * [https://lethain.com/](https://lethain.com/)
