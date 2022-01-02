@@ -152,6 +152,7 @@ gpg --armor --export KEY_ID
 
 - [Hidden Bar](https://github.com/dwarvesf/hidden)
 - [Homebrew](https://brew.sh/)
+- [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html)
 - [Meeter](https://trymeeter.com/)
 - [Muzzle](https://muzzleapp.com/)
 - [Neat](https://neat.run/)
