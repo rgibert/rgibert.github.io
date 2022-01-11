@@ -35,7 +35,7 @@ June 2018 to December 2021
 ### Senior Platform Engineer, Data & Analytics (DNA)
 [Royal Bank of Canada](https://www.rbcroyalbank.com/)   
 January 2016 to June 2018
- - Designed and built RBC’s new enterprise multi-tenant Hadoop (Hortonworks Data Platform - HDP) clusters with roughly 400 worker nodes in production.
+ - Designed and built RBC’s new enterprise multi-tenant Hadoop (Hortonworks Data Platform - HDP) clusters with roughly 370 worker nodes in production.
    - Developed and managed internal monitoring and system management tools.
    - Integrated interfaces with Microsoft Active Directory leveraging both Kerberos and LDAP.
    - Defined standards for creating security policies in Ranger.
