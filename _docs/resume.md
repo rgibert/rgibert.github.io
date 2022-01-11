@@ -46,7 +46,7 @@ January 2016 to June 2018
  - Organized and directed the successful upgrade of the HDP 2.4.2 environment to HDP 2.6.3, supporting 100+ application tenants.
    - Identified breaking changes required to complete the upgrade.
    - Worked with application teams to identify impact of platform changes and plan for their required code changes.
-   - Built a new upgrade evluation cluster for application upgrade testing so as not to impact business as usual development efforts during the upgrade testing.
+   - Built a new upgrade evaluation cluster for application upgrade testing so as not to impact business as usual development efforts during the upgrade testing.
    - Developed upgrade life cycle for the platform so that teams would have a more consistent upgrade cadence.
  - Provided technical leadership to DNA's Platform Engineering Big Data team.
  - Provided 24/7 level 3 support for the production support team.
