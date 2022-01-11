@@ -23,7 +23,7 @@ June 2018 to December 2021
    - Worked with RBC's enterprise security teams to ensure alignment with enterprise standards and requirements.
    - Positioned the new platform to provide additional capabilities to better meet RBC's future needs.
    - Led the build of an evaluation environment for application teams to identify migration pain points, and to complete migration planning.
- - Containered operational support tools to allow for easy maintenance and deployment.
+ - Containerized operational support tools to allow for easy maintenance and deployment.
  - Developed CI/CD pipelines for containerized tools.
  - Developed CI/CD pipelines for Ansible role and playbook development, leveraging Ansible Molecule as a testing framework.
  - Defined procedures and standards for team workflows to allow more consistent delivery.
