@@ -8,6 +8,10 @@ Ansible, Bash, Python, Kerberos, LDAP, Prometheus, Grafana, Nagios, Linux, Java,
 
 ## Experience
 
+### Senior Site Reliability Engineer
+[Sentry](https://www.sentry.io/)   
+Januray 2022 to Present
+
 ### Lead Platform Engineer, Data & Analytics (DNA)
 [Royal Bank of Canada](https://www.rbcroyalbank.com/)   
 June 2018 to December 2021
@@ -19,7 +23,7 @@ June 2018 to December 2021
    - Worked with RBC's enterprise security teams to ensure alignment with enterprise standards and requirements.
    - Positioned the new platform to provide additional capabilities to better meet RBC's future needs.
    - Led the build of an evaluation environment for application teams to identify migration pain points, and to complete migration planning.
- - Containerizing operational support tools to allow for easy maintenance and deployment.
+ - Containered operational support tools to allow for easy maintenance and deployment.
  - Developed CI/CD pipelines for containerized tools.
  - Developed CI/CD pipelines for Ansible role and playbook development, leveraging Ansible Molecule as a testing framework.
  - Defined procedures and standards for team workflows to allow more consistent delivery.
@@ -32,7 +36,7 @@ June 2018 to December 2021
 [Royal Bank of Canada](https://www.rbcroyalbank.com/)   
 January 2016 to June 2018
  - Designed and built RBC’s new enterprise multi-tenant Hadoop (Hortonworks Data Platform - HDP) clusters with roughly 400 worker nodes in production.
- - Develop and manage internal monitoring and system management tools.
+   - Developed and managed internal monitoring and system management tools.
    - Integrated interfaces with Microsoft Active Directory leveraging both Kerberos and LDAP.
    - Defined standards for creating security policies in Ranger.
    - Scripted Hadoop on-boarding to simplify the on-boarding of users and applications.
@@ -51,8 +55,6 @@ January 2016 to June 2018
 [Symcor](https://www.symcor.com/)   
 July 2012 to January 2016
  - Provided expertise to projects for implementing middleware systems across all development, test, and production systems, working with developers, testers, project managers, and internal and external clients.
- - Sought after by project managers for ability to solve hard problems and explain technical details in plain language.
- - Extensive experience managing middleware systems/application servers, including writing bash scripts and managing configuration files.
  - Built solutions that are simple to set up and maintain, to ensure consistent deployment and configuration.
  - Effective at navigating change processes, coordinating multiple stakeholders to ensure rapid progression from initiation through to completion and avoiding unnecessary delays.
  - Automated and managed build and deployment processes, allowing greatly reduced deployment time requirements and consistent deployment procedures.
@@ -62,8 +64,8 @@ July 2012 to January 2016
  - Standardised Apache Tomcat setup of our applications to allow for easy updates and consistent configuration.
  - Spun up proof of concept setups to evaluate new products, ensuring they integrate effectively with existing systems and meet business requirements.
  - Implemented and managed client facing single sign-on (SSO) integrations leveraging SAML 2.0.
- - Develop and manage internal monitoring and system management tools.
- - Provide 24/7 support for middleware systems including WebSphere MQ, Apache httpd, Apache Tomcat, Apache Geronimo, WebSphere AS and IBM Sterling Connect:Direct.
+ - Developed and managed internal monitoring and system management tools.
+ - Provided 24/7 support for middleware systems including WebSphere MQ, Apache httpd, Apache Tomcat, Apache Geronimo, WebSphere AS and IBM Sterling Connect:Direct.
 
 ### Implementation Analyst III, Delivery and Support Services
 [Symcor](https://www.symcor.com/)   
