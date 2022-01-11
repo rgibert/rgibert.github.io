@@ -53,7 +53,7 @@ January 2016 to June 2018
 
 ### Implementation Analyst IV, Delivery and Support Services
 [Symcor](https://www.symcor.com/)   
-July 2012 to January 2016
+April 2012 to January 2016
  - Provided expertise to projects for implementing middleware systems across all development, test, and production systems, working with developers, testers, project managers, and internal and external clients.
  - Built solutions that are simple to set up and maintain, to ensure consistent deployment and configuration.
  - Effective at navigating change processes, coordinating multiple stakeholders to ensure rapid progression from initiation through to completion and avoiding unnecessary delays.
