@@ -28,7 +28,7 @@ June 2018 to December 2021
  - Developed CI/CD pipelines for Ansible role and playbook development, leveraging Ansible Molecule as a testing framework.
  - Defined procedures and standards for team workflows to allow more consistent delivery.
  - Researched and evaluated tooling and platforms to provide additional options for addressing RBC's data processing and storage needs.
- - Providing 24/7 level 3 support for the production support team.
+ - Provided 24/7 level 3 support for the production support team.
  - Led migration of Sensu monitoring system to a containerized Prometheus deployment to simplify deployment and support processes, allowing more effective metrics collection and alerting.
  - Led evaluation of Microsoft Azure cloud for Hadoop disaster recovery purposes.
 
