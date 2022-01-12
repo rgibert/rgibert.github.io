@@ -214,3 +214,9 @@ security add-trusted-cert -d -r trustRoot -k ~/Library/Keychains/login.keychain-
 ~~~
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 ~~~
+
+## Add Default SSH Key Passphrase to macOS Keychain
+
+~~~
+ssh-add -K
+~~~
