@@ -12,9 +12,10 @@ title: Career
     }
 </style>
 
-# Leadership Blogs
+# Leadership Sites
 
 * [https://lethain.com/](https://lethain.com/)
+* [https://www.manager-tools.com/](https://www.manager-tools.com/)
 * [https://randsinrepose.com/](https://randsinrepose.com/)
 
 # Engineering Blogs
