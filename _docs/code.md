@@ -131,6 +131,14 @@ From [https://news.ycombinator.com/item?id=24111105](https://news.ycombinator.co
 count without(cpu, mode) (node_cpu_seconds_total{mode="idle"})
 ~~~
 
+# Python
+
+## Get Supported TLS Versions
+
+~~~ python
+python -c "import requests; print(requests.get('https://www.howsmyssl.com/a/check').json()['tls_version'])"
+~~~
+
 # Shell
 
 ## Bash

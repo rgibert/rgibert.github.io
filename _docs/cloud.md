@@ -2,6 +2,20 @@
 title: Cloud
 ---
 
+# Google Cloud
+
+## Get All IAM Policies For a Service Account
+
+~~~ bash
+gcloud \
+    projects \
+    get-iam-policy \
+    ${project_name} \
+    --flatten="bindings[].members" \
+    --format="table(bindings.roles)" \
+    --filter="bindings.members:${service_account}"
+~~~
+
 # Heroku
 
 ## Deploying Docker Images
