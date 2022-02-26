@@ -1,5 +1,8 @@
 ---
 title: Career
+tags:
+    - books
+    - career
 ---
 
 <style type="text/css" media="screen">

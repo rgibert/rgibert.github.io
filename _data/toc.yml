@@ -1,31 +1,6 @@
-- title: Blog
-  url: blog
 - title: Documentation
   url: docs
-  links:
-    - title: Books
-      url: docs/books
-    - title: Browsers
-      url: docs/browsers
-    - title: Career
-      url: docs/career
-    - title: Cloud
-      url: docs/cloud
-    - title: Code
-      url: docs/code
-    - title: Fitness
-      url: docs/fitness
-    - title: Hardware
-      url: docs/hardware
-    - title: Identity
-      url: docs/identity
-    - title: OS
-      url: docs/os
-    - title: SSL/TLS
-      url: docs/ssltls
-    - title: Synology
-      url: docs/synology
-    - title: Virtualization
-      url: docs/virtualization
-    - title: VPN
-      url: docs/vpn
+- title: Tags
+  url: tags
+- title: Resume
+  url: docs/resume

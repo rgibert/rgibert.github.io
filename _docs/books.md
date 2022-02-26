@@ -1,5 +1,7 @@
 ---
 title: Books
+tags:
+    - books
 ---
 
 <style type="text/css" media="screen">
