@@ -217,6 +217,22 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 ## Add Default SSH Key Passphrase to macOS Keychain
 
+Add the following to your ~/.ssh/config:
+
 ~~~
-ssh-add -K
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    ForwardAgent yes
+~~~
+
+## Auto-Accept and Ignore Changes to SSH Host Keys
+
+NOTE: Security best practice is to validate host keys, this bypasses that.
+
+Add the following to your ~/.ssh/config:
+~~~
+Host *
+    GlobalKnownHostsFile /dev/null
+    StrictHostKeyChecking no
 ~~~
