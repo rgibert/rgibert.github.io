@@ -18,7 +18,7 @@ title: Richard Gibert
 email: richard@gibert.ca
 author: Richard Gibert
 description: > # this means to ignore newlines until "baseurl:"
-  Richard Gibert's web site and knowledge base
+    Richard Gibert's web site and knowledge base
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
 baseurl: "" # the subpath of your site, e.g. /blog
 
@@ -32,7 +32,7 @@ github_repo: "rgibert.github.io"
 
 # Optional
 twitter: richard_gibert
-linkedin: richard-gibert-32bba36
+linkedin: richard-gibert
 dockerhub: rgibert
 
 # Should there be feedback buttons at the bottom of pages?
@@ -67,26 +67,24 @@ exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
 
 # Collections
 collections:
-  docs:
-    output: true
-    permalink: /:collection/:path
+    docs:
+        output: true
+        permalink: /:collection/:path
 
 # Defaults
 defaults:
-  - scope:
-      path: "_docs"
-      type: "docs"
-    values:
-      layout: page
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: "posts"
-      type: "posts"
-    values:
-      layout: "post"
+    - scope:
+        path: "_docs"
+        type: "docs"
+      values:
+        layout: page
+    - scope:
+        path: ""
+        type: "pages"
+      values:
+        layout: "page"
+    - scope:
+        path: "posts"
+        type: "posts"
+      values:
+        layout: "post"
