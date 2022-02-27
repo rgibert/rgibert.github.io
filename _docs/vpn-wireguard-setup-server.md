@@ -25,8 +25,9 @@ wg pubkey < /etc/wireguard/privatekey-$(hostname -s) > /etc/wireguard/publickey-
 ~~~ bash
 sudo ip link add dev wg0 type wireguard
 ~~~
-1. Setup your configuration file at /etc/wireguard/wg0.conf
-~~~ ini
+1. Setup your configuration file at `/etc/wireguard/wg0.conf`
+
+~~~
 [Interface]
 ListenPort = 51820
 PrivateKey = VPN_SERVER_PRIVATE_KEY

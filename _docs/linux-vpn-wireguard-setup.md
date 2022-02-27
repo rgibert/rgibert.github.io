@@ -26,8 +26,9 @@ wg pubkey < /etc/wireguard/privatekey-$(hostname -s) > /etc/wireguard/publickey-
 ~~~ bash
 sudo ip link add dev wg0 type wireguard
 ~~~
-1. Setup your configuration file at /etc/wireguard/wg0.conf
-~~~ ini
+1. Setup your configuration file at `/etc/wireguard/wg0.conf`
+
+~~~
 [Interface]
 PrivateKey = LOCAL_HOST_PRIVATE_KEY
 
@@ -36,8 +37,8 @@ PublicKey = SERVER_PUBLIC_KEY
 AllowedIPs = IPS_TO_TUNNEL
 Endpoint = SERVER:PORT
 ~~~
-
 NOTE: If you'd like to route all traffic through the VPN, set AllowedIPs to 0.0.0.0/0
+
 1. Attach your configuration file to your WireGuard device
 ~~~ bash
 sudo wg setconf wg0 /etc/wireguard/wg0.conf
@@ -62,7 +63,8 @@ sudo ip route add 128.0.0.0/1 dev wg0
 ~~~
 
 ## Gnome Toggle Setup
-1. Create toggle script and save to /usr/local/bin/wireguard-toggle
+1. Create toggle script and save to `/usr/local/bin/wireguard-toggle`
+
 ~~~ bash
 #!/usr/bin/env bash
 
@@ -90,8 +92,8 @@ NOTE: The script assumes you're in sudoers with NOPASSWD set, if not you can use
 mkdir -p ~/.local/share/icons
 wget https://richard.gibert.ca/assets/images/wireguard.png -P ~/.local/share/icons
 ~~~
-1. Create the desktop file at ~/.local/share/applications
-~~~ ini
+1. Create the desktop file at `~/.local/share/applications`
+~~~
 [Desktop Entry]
 Type=Application
 Name[en_CA]=WireGuard Toggle
