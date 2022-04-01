@@ -6,7 +6,7 @@ tags:
 
 ## Skills
 
-Ansible, Bash, Python, Salt, Terraform, Google Cloud Platform (GCP), Kerberos, LDAP, Prometheus, Grafana, Nagios, Linux, Java, SQL, Git, Subversion (SVN), Jenkins, GitHub Actions, Maven, Hadoop, Hortonworks Data Platform (HDP), Cloudera Data Platform (CDP), Apache httpd, Apache Tomcat, Apache Geronimo, SAML, SAFe, Kanban, Scrum, ITIL
+Ansible, Bash, Python, Salt, Terraform, Google Cloud Platform (GCP), Kerberos, LDAP, Prometheus, Grafana, Nagios, Linux, Java, SQL, Git, Subversion (SVN), Jenkins, GitHub Actions, Maven, Hadoop, Hortonworks Data Platform (HDP), Cloudera Data Platform (CDP), Apache httpd, Apache Tomcat, SAML, Kanban, Scrum
 
 ## Experience
 
@@ -23,7 +23,7 @@ June 2018 to December 2021
   - Provided technical leadership to DNA’s Platform Engineering Big Data team.    
   - Managed day-to-day workload assignments and prioritization of the DNA Platform Engineering Big Data team.    
   - Led RBC's EDL 2.0 platform design and build leveraging Cloudera Data Platform (CDP) Private Cloud Base.    
-    - Defined new worker types to more optimally target capacity needs while continuing to meet application performanc  e requirements and to provide more flexibility for future cluster expansion.    
+    - Defined new worker types to more optimally target capacity needs while continuing to meet application performance requirements and to provide more flexibility for future cluster expansion.    
     - Worked with the Enterprise Data Architecture team to create all architecture and design artifacts.    
     - Worked with RBC's enterprise security teams to ensure alignment with enterprise standards and requirements.    
     - Positioned the new platform to provide additional capabilities to better meet RBC's future needs.    
