@@ -2,6 +2,7 @@
 title: Change Kafka Topic Configuration
 tags:
     - kafka
+    - topics
 ---
 
 # Change Kafka Topic Configuration

@@ -6,7 +6,7 @@ tags:
 
 ## Skills
 
-Ansible, Bash, Python, Salt, Terraform, Google Cloud Platform (GCP), Kerberos, LDAP, Prometheus, Grafana, Nagios, Linux, Java, SQL, Git, Subversion (SVN), Jenkins, GitHub Actions, Maven, Hadoop, Hortonworks Data Platform (HDP), Cloudera Data Platform (CDP), Apache httpd, Apache Tomcat, SAML, Kanban, Scrum
+Ansible, Bash, Python, Salt, Terraform, Google Cloud Platform (GCP), Kerberos, LDAP, Prometheus, Grafana, Nagios, Linux, Java, SQL, Git, Jenkins, GitHub Actions, Maven, Hadoop, Hortonworks Data Platform (HDP), Cloudera Data Platform (CDP), Apache httpd, Apache Tomcat, Kanban, Scrum
 
 ## Experience
 
