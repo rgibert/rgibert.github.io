@@ -1,11 +1,11 @@
 ---
-title: Show Kafka Consumer Group Details
+title: Reset Kafka Consumer Group Offset
 tags:
     - kafka
     - consumer-groups
 ---
 
-# Change Kafka Topic Configuration
+# Reset Kafka Consumer Group Offset
 
 ~~~ bash
 kafka-consumer-groups \
@@ -26,3 +26,4 @@ Available reset options:
     --to-datetime <datetime_string>
     --by-duration <duration_string>
 ~~~
+n

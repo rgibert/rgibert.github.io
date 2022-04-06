@@ -5,7 +5,7 @@ tags:
     - consumer-groups
 ---
 
-# Change Kafka Topic Configuration
+# Show Kafka Consumer Group Details
 
 ~~~ bash
 kafka-consumer-groups \
