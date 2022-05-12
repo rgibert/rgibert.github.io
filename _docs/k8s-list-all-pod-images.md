@@ -1,12 +1,12 @@
 ---
-title: Kubernetes List all Images in Pods
+title: Kubernetes list all images in pods
 tags:
     - kubernetes
     - k8s
     - containers
 ---
 
-# Kubernetes List all Images in Pods
+# Kubernetes list all images in pods
 
 ~~~ bash
 kubectl \
