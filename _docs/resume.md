@@ -13,7 +13,6 @@ Ansible, Bash, Python, Salt, Terragrunt, Terraform, Google Cloud Platform (GCP),
 ### Senior Site Reliability Engineer
 [Sentry](https://www.sentry.io/)   
 January 2022 to Present    
-    - Leading operational aspects of extending our SaaS product to support multiple regional deployments.   
     - Automating infrastructure and service deployment using Terraform, Salt, and Kubernetes.   
     - Implementing infrastructure changes to improve Sentry's reliability and availability.   
     - Working embedded with product teams to implement broad-reaching projects.   
