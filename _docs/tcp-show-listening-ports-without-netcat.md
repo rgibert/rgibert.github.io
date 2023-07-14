@@ -1,11 +1,11 @@
 ---
-title: Show listening TCP ports without netcat
+title: Show listening TCP ports without netstat
 tags:
     - network
     - tcp
 ---
 
-# Show listening TCP ports without netcat
+# Show listening TCP ports without netstat
 
 ~~~ bash
 declare -a ports=($(tail -n +2 /proc/net/tcp | cut -d":" -f"3" | cut -d" " -f"1"))
