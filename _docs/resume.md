@@ -22,9 +22,9 @@ January 2022 to Present
         - Added Terragrunt to Terraform setup to reduce duplication of code and simplify provisioning similar resources going forward.   
         - Updated Kubernetes manifest templating to support multiple regions.   
         - Worked with product engineers to support their changes required to enable the new European deployment.   
-    - Updated the Single Tenant product offering to be more easily supported and to bring it in-line with the SaaS offering to allow for simpler and more frequent updates, moving from bi-weekly highly manual to immediate automatic releases.
-    - Developing tooling to support self-serve support model for Sentry's product engineering teams.
-    - Leading incident role play sessions to familiarize engineers with incident management processes and to assit them in getting comfortable with the services making up Sentry's offering, their failure modes, and troubleshooting steps.
+    - Updated the Single Tenant product offering to be more easily supported and to bring it in-line with the SaaS offering to allow for simpler and more frequent updates, moving from bi-weekly highly manual to immediate automatic releases.    
+    - Developing tooling to support self-serve support model for Sentry's product engineering teams.    
+    - Leading incident role play sessions to familiarize engineers with incident management processes and to assit them in getting comfortable with the services making up Sentry's offering, their failure modes, and troubleshooting steps.    
     - Providing 24/7 support for Sentry's offerings.    
 
 ### Lead Platform Engineer, Data & Analytics (DNA)    
