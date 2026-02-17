@@ -10,9 +10,13 @@ Python, Salt, Terragrunt, Terraform, Google Cloud Platform (GCP), Bash, Ansible,
 
 ## Experience
 
+### Staff Site Reliability Engineer
+[Sentry](https://www.sentry.io/)   
+February 2026 to Present   
+
 ### Senior Site Reliability Engineer
 [Sentry](https://www.sentry.io/)   
-January 2022 to Present   
+January 2022 to January 2026   
     - Developing tooling to support self-serve support model for Sentry's product engineering teams.    
     - Leading incident role play sessions to familiarize engineers with incident management processes and to asist them in getting comfortable with the services making up Sentry's offering, their failure modes, and troubleshooting steps.    
     - Consolidating divergent deployment configurations to simplify managing and supporting Sentry's offerings.    
