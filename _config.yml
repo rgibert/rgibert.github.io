@@ -42,7 +42,7 @@ defaults:
 search_enabled: true
 heading_anchors: true
 nav_enabled: true
-color_scheme: dark
+color_scheme: light
 favicon_ico: /assets/favicons/favicon.ico
 back_to_top: true
 enable_copy_code_button: true

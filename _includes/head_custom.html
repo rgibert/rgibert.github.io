@@ -1,11 +1,14 @@
 <script>
   (function () {
-    var theme = null;
+    var stored = null;
     try {
-      theme = localStorage.getItem('theme');
+      stored = localStorage.getItem('theme');
     } catch (e) {}
-    if (theme !== 'light' && theme !== 'dark') {
-      theme = 'dark';
+    var theme;
+    if (stored === 'light' || stored === 'dark') {
+      theme = stored;
+    } else {
+      theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
     var link = document.querySelector('link[rel="stylesheet"][href*="just-the-docs-default"]');
     if (link) {
