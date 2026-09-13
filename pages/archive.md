@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Articles
 permalink: /archive/
+nav_exclude: true
 ---
 # Blog Archive
 

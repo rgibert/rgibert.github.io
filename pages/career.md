@@ -1,5 +1,10 @@
 ---
 title: Career
+permalink: /career/
+nav_order: 5
+redirect_from:
+    - /docs/career.html
+    - /docs/career
 tags:
     - books
     - career

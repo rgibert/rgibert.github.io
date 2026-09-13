@@ -1,19 +1,18 @@
 ---
-layout: page
-title: Documentation
+title: Docs
 permalink: /docs/
+nav_exclude: true
 ---
 
 # Documentation
 
-Welcome to the {{ site.title }} Documentation pages! Here you can quickly jump to a 
-particular page.
+A knowledge base of short how-to articles, commands, and troubleshooting notes I've
+collected over the years. Use the search box (top left) or the **Docs** folder in the
+side navigation to find a topic.
 
-<div class="section-index">
-    <hr class="panel-line">
-    {% for post in site.docs  %}        
-    <div class="entry">
-    <h5><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
-    <p>{{ post.description }}</p>
-    </div>{% endfor %}
-</div>
+{% assign docs = site.docs | sort: 'title' %}
+<ul>
+{% for doc in docs %}
+  <li><a href="{{ doc.url | prepend: site.baseurl }}">{{ doc.title }}</a></li>
+{% endfor %}
+</ul>

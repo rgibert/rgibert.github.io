@@ -6,4 +6,4 @@ Welcome to the source code of my personal website.
 
 - [GitHub Pages](https://pages.github.com/)
 - [Jekyll](https://jekyllrb.com/)
-- [Docsy Jekyll Theme](https://vsoch.github.io/docsy-jekyll/)
+- [Just the Docs](https://just-the-docs.com/) v0.12.0

@@ -1,7 +1,7 @@
 ---
-layout: page
-title: About
+title: Home
 permalink: /
+nav_order: 1
 ---
 
 # About
@@ -13,5 +13,4 @@ Welcome to Richard Gibert's personal web site and knowledge base.
 - I live and work in Toronto, Canada.
 - I'm married with 2 kids.
 - I have a Bachelor of Computing from [Queen's University](https://www.queensu.ca/).
-- I've been working in infrastructure automation and DevOps since 2008.
-- I've been [running](/docs/running) since 2013.
+- I've been working in various iterations of Platform Engineering, Site Reliability, and DevOps since 2008.

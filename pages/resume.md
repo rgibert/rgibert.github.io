@@ -1,5 +1,10 @@
 ---
 title: Resume
+permalink: /resume/
+nav_order: 4
+redirect_from:
+    - /docs/resume.html
+    - /docs/resume
 tags:
     - career
 ---
