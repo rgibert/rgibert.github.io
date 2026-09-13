@@ -1,0 +1,15 @@
+<script>
+  (function () {
+    var theme = null;
+    try {
+      theme = localStorage.getItem('theme');
+    } catch (e) {}
+    if (theme !== 'light' && theme !== 'dark') {
+      theme = 'dark';
+    }
+    var link = document.querySelector('link[rel="stylesheet"][href*="just-the-docs-default"]');
+    if (link) {
+      link.setAttribute('href', link.href.replace('just-the-docs-default.css', 'just-the-docs-' + theme + '.css'));
+    }
+  })();
+</script>
